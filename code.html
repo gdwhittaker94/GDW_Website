@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css" hreflang="en" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="./blobz.css">
+    <link rel="stylesheet" href="./form_submitted.css" hreflang="en" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <script src="script.js" defer></script>
+    <title>Guy David Whittaker | Frontend Developer</title>
+  </head>
+  <body>
+
+    <!-- *NAVBAR -->
+    <header>
+      <nav class="nav">
+        <div class="nav__container">
+          <div class="nav__left">
+            <a href="./index.html">
+              <span class="nav__logo">GDW</span>
+            </a>
+          </div>
+          <div class="nav__middle">
+            <span class="nav__flag nav__ukFlag">🇬🇧</span>
+            <span class="nav__flag nav__esFlag">🇪🇸</span>
+          </div>
+          <div class="nav__right">
+            <ul class="nav__list active">
+              <a href="#projects-section">
+                <li class="nav__li">Projects</li>
+              </a>
+              <a href="#about-section">
+                <li class="nav__li">About Me</li>
+              </a>
+              <a href="#contact-section">
+                <li class="nav__li">Contact</li>
+              </a>
+              <!-- TODO: Investigate dark mode (Youtube video) -->
+              <!-- <li class="nav__li">
+                <img src="./img/icon/moon-stars-fill.svg" alt="Light Mode Icon">
+              </li> -->
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <!-- *PROJECTS -->
+
+    <section class="projects" id="projects-section">
+      <div class="projects__header">
+        <h1 class="projects__title">Projects</h1>
+      </div>
+
+      <!-- TODO: COMPLETE CARDS (IMAGE + TEXT + ACCOMPANYING PROJECT PAGES) -->
+
+      <!-- PROJECT CARDS -->
+      <div class="projects__gridCntr">
+        <!-- Card 1 -->
+        <div class="card card__bluebg">
+          <h2 class="card__header">WWF Event Page</h2>
+          <div class="card__image">
+            <img src="./img/WWF_eventpage.png" alt="Preview Image of Project 1" id="card__image1">
+          </div>
+          <p class="card__text">This is a replica page of a <a href="https://support.worldwildlife.org/site/SPageServer/?NONCE_TOKEN=4766A0DB3CE84C0025981400E9A751D0&pagename=panda_nation_chicago_marathon" target="_blank">real WWF page</a>, with a few changes and customisations. It is one of my more JS heavy projects, including a fairly complex image carousel, a clickable dropdown menu, and an event countdown timer.
+          </p>
+          <ul class="card__list">
+            <li class="card__li">HTML5</li>
+            <li class="card__li">CSS</li>
+            <li class="card__li">Responsive Web Design</li>
+            <li class="card__li">Javascript (ES6+)</li>
+          </ul>
+          <!-- TODO: LINK UP -->
+          <div class="card__buttons">
+            <a href="#" target="_blank">
+              <button class="button button__discover">Discover More <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+            <a href="#" target="_blank">
+              <button class="button button__sourceCode">View Source Code <span><img src="./img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card__yellowbg">
+          <h2 class="card__header">WWF Mini-Website</h2>
+          <div class="card__image">
+            <img src="./img/WWF_website.png" alt="Preview Image of Project 2" id="card__image2">
+          </div>
+          <p class="card__text">
+            This is a project which attempted to mimic three of the pages from the <a href="https://wwf.org.au/" target="_blank">real WWF Australia website</a> (they have since modified the original design) and my first truly multiple-webpage website. It was a very image intensive project, testing my CSS skills and my ability to create a responsive design. There are also some simple JS elements such as a basic image carousel and a hamburger menu.
+          </p>
+          <ul class="card__list">
+            <li class="card__li">HTML5</li>
+            <li class="card__li">CSS</li>
+            <li class="card__li">Responsive Web Design</li>
+            <li class="card__li">Javascript</li>
+          </ul>
+          <!-- TODO: LINK UP -->
+          <div class="card__buttons">
+            <a href="#" target="_blank">
+              <button class="button button__discover">Discover More <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+            <a href="#" target="_blank">
+              <button class="button button__sourceCode">View Source Code <span><img src="img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card__bluebg">
+          <h2 class="card__header">Flexbox & Grid Testimonials</h2>
+          <div class="card__image">
+            <img src="./img/frontendmentor.png" alt="Preview Image of Project 3" id="card__image3">
+          </div>
+          <p class="card__text">
+            I choose to do this project from <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank">frontendmentor.io</a> in order to put my CSS Flexbox and Grid skills to the test. It was a useful exercise in understanding how both layout systems work, as well as the differences between them.
+          </p>
+          <ul class="card__list">
+            <li class="card__li">HTML5</li>
+            <li class="card__li">CSS</li>
+            <li class="card__li">Flexbox</li>
+            <li class="card__li">Grid</li>
+          </ul>
+          <!-- TODO: LINK UP -->
+          <div class="card__buttons">
+            <a href="#" target="_blank">
+              <button class="button button__discover">Discover More <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+            <a href="#" target="_blank">
+              <button class="button button__sourceCode">View Source Code <span><img src="./img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card card__bluebg">
+          <h2 class="card__header">My CodePen Collection</h2>
+          <div class="card__image">
+            <img src="./img/blank_profile.png" alt="Preview Image of Project 3" id="card__image3">
+          </div>
+          <p class="card__text">
+            During my self-taught frontend development journey there have been lots of smaller projects that I've done which have played an important role in my understanding and improvement of certain topics, but which aren't perhaps worthy of being showcased as individual projects themselves. Therefore, if you want to see what other things I've worked on apart from the above projects, I recommend you check out my CodePen profile below.
+          </p>
+          <ul class="card__list">
+            <li class="card__li">HTML5</li>
+            <li class="card__li">CSS</li>
+            <li class="card__li">Javascript</li>
+          </ul>
+          <!-- TODO: LINK UP -->
+          <div class="card__buttons">
+            <a href="https://codepen.io/gdwhittaker94/pens/" target="_blank">
+              <button class="button button__discover">Discover More <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+            </a>
+          </div>
+        </div>
+
+
+    </section>
+
+
+  </body>
+</html>
