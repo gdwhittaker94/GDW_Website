@@ -121,13 +121,47 @@ strong {
     border: 1px solid var(--turquoise);
 }
 
-.container__title {
+.container__title  {
     font-size: 4rem;
     font-family: var(--dm_serif);
     text-align: center;
     margin-bottom: 30px;
     position: relative;
 }
+
+.container__title span {
+	font-size: 4rem;
+	display: inline-block;
+}
+
+.container__title span:hover {
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-horizontal {
+	0%,
+	100% {
+    transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+    transform: translateX(-3px);
+	}
+	20%,
+	40%,
+	60% {
+    transform: translateX(3px);
+	}
+	80% {
+    transform: translateX(1px);
+	}
+	90% {
+    transform: translateX(-1px);
+	}
+}
+
 
 .container__title::after {
 	content: ' ';
@@ -148,19 +182,32 @@ strong {
 	gap: 20px;
 }
 
-.container__text p, i {
+.container__text p, i, .red, .blue, .green, .purple {
 	font-size: 1.6rem;
     line-height: 2.4rem;
 	font-family: var(--dm_sans);
 }
 
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.green {
+	color: green;
+}
+.purple {
+	color: purple;
+}
+
 .container__info {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
-.container__lcol, .container__rcol {
+.container__top, .container__bottom {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -168,37 +215,50 @@ strong {
     position: relative;
 }
 
-.container__lcol h2, .container__rcol h2 {
+.container__subtitle {
     font-size: 2.5rem;
     font-family: var(--dm_serif);
     margin-bottom: 35px;
 }
 
-.container__lcol > h2::after, .container__rcol > h2::after {
+.container__subtitle span {
+	font-size: 2.5rem;
+	display: inline-block;
+}
+
+.container__subtitle span:hover {
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.container__subtitle::after {
 	content: ' ';
 	border: 2px solid var(--turquoise);
 	height: 1px;
-	width: 150px;
+	width: 200px;
 	position: absolute;
 	left: 5%;
     top: 40px;
 }
 
-.container__lcol p, .container__rcol p {
+.container__subtitle2::after {
+	width: 150px;
+}
+
+.container__top p, .container__bottom p {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-family: var(--dm_sans);
     margin-bottom: 30px;
 }
 
-.container__lcol a {
+.container__top a {
 	font-size: 1.6rem;
     line-height: 2.4rem;
 	font-family: var(--dm_sans);
 	color: rgb(27, 148, 188)
 }
 
-.container__rcol .container__list .container__item {
+.container__bottom .container__list .container__item {
     margin-bottom: 30px;
 }
 
@@ -224,7 +284,7 @@ strong {
 }
 
 .container__images {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .container__images img {
@@ -243,7 +303,7 @@ strong {
 
 button {
 	max-width: fit-content;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
     font-family: var(--dm_sans);
 	padding: 5px;
 	border-radius: 5px;
