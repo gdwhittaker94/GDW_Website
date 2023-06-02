@@ -18,29 +18,29 @@ navLi.forEach(n => n.addEventListener("click", () => {
 }))
 
 // *HERO IMAGE EFFECT
-// const heroImg = document.querySelector(".hero__img");
-// const height = heroImg.clientHeight;
-// const width = heroImg.clientWidth;
+const heroImg = document.querySelector(".hero__img");
+const height = heroImg.clientHeight;
+const width = heroImg.clientWidth;
 
-// heroImg.addEventListener('mousemove', (evt) => {
-// 	const clientX = evt.clientX;
-// 	const clientY = evt.clientY;
+heroImg.addEventListener('mousemove', (evt) => {
+	const clientX = evt.clientX;
+	const clientY = evt.clientY;
 
-// 	const boundingRect = heroImg.getBoundingClientRect();
-// 	const offsetX = clientX - boundingRect.left;
-// 	const offsetY = clientY - boundingRect.top;
+	const boundingRect = heroImg.getBoundingClientRect();
+	const offsetX = clientX - boundingRect.left;
+	const offsetY = clientY - boundingRect.top;
 
-// 	const yRotation = ((offsetX - width / 2) / width) * 20;
-// 	const xRotation = ((offsetY - height / 2) / height) * 20;
+	const yRotation = ((offsetX - width / 2) / width) * 20;
+	const xRotation = ((offsetY - height / 2) / height) * 20;
 
-// 	const string = `perspective(500px) scale(1.1) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+	const string = `perspective(500px) scale(1.1) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
 
-// 	heroImg.style.transform = string;
-// });
+	heroImg.style.transform = string;
+});
 
-// heroImg.addEventListener('mouseout', () => {
-// 	heroImg.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
-// });
+heroImg.addEventListener('mouseout', () => {
+	heroImg.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)';
+});
 
 
 // * CHANGING IMAGE (PROJECT CARDS)

@@ -360,7 +360,7 @@ textarea {
 	}
 
 	.nav__ukFlag {
-		margin-left: -30px;
+		margin-left: -10px;
 	}
 }
 
@@ -368,7 +368,6 @@ textarea {
 
 	.nav__middle {
 		margin-left: auto;
-		margin-right: 1vw;
 	}
 }
 
@@ -395,8 +394,8 @@ textarea {
 }
 
 .blob3 {
-	left: 10%;
-	top: 70%;
+	left: 30%;
+	top: 80%;
 	animation: blob3 20s ease-out infinite alternate;
 }
 
@@ -407,21 +406,33 @@ textarea {
 }
 
 .blob5 {
-	right: -20%;
+	right: -5%;
 	top: 5%;
 	animation: blob5 30s ease-out infinite alternate;
 }
 
 .blob6 {
-	left: 40%;
-	top: 55%;
-	animation: blob6 30s ease-out infinite alternate;
+	left: 35%;
+	top: 45%;
+	animation: blob6 20s ease-out infinite alternate;
 }
 
 .blob7 {
-	left: 65%;
+	left: 5%;
 	top: 5%;
 	animation: blob7 30s ease-out infinite alternate;
+}
+
+.blob8 {
+	left: 30%;
+	bottom: -14%;
+	animation: blob8 20s ease-out infinite alternate;
+}
+
+.blob9 {
+	left: 75%;
+	top: 35%;
+	animation: blob9 30s ease-out infinite alternate;
 }
 
 @keyframes blob1 {
@@ -447,7 +458,7 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(600px,-100px)
+		transform: translate(600px,100px)
 	}
 }
 
@@ -474,7 +485,7 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(-300px,300px)
+		transform: translate(-100px,500px)
 	}
 }
 
@@ -483,7 +494,25 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(-600px,200px)
+		transform: translate(800px,100px)
+	}
+}
+
+@keyframes blob8 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(300px,50px)
+	}
+}
+
+@keyframes blob9 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(100px,-100px)
 	}
 }
 
@@ -497,38 +526,33 @@ textarea {
 	padding-top: 30px;
 	font-family: var(--dm_sans);
 	margin-bottom: 80px;
-	background-color: lightblue;
 }
 
 .hero__container {
-	margin-bottom: 50px;
-	background-color: rgb(173, 230, 179);
-
+	margin-bottom: 40px;
 }
 
 .hero__mainText {
 	text-align: center;
 	margin-bottom: 20px;
-	background-color: lightsteelblue;
-
 }
 
 .hero__mainText > * {
 	margin-bottom: 15px;
 }
 
-.hero__header {
+.hero__title {
 	font-size: 5rem;
 	margin-bottom: 0;
 }
 
-.hero__header span {
+.hero__title span {
 	font-size: 5rem;
 	font-family: var(--dm_serif);
 	padding-bottom: 10px;
 }
 
-.hero__subheader {
+.hero__subtitle {
 	font-size: 3.2rem;
 	font-family: var(--dm_serif);
 }
@@ -537,7 +561,7 @@ textarea {
 	font-size: 1.6rem;
 	max-width: 75%;
 	margin: 0 auto;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 .hero__img {
@@ -588,18 +612,16 @@ textarea {
 	margin-bottom: 50px;
 }
 
-.techStack__header {
+.techStack__title {
 	font-size: 2.8rem;
 	text-align: center;
 	font-family: var(--dm_serif);
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .techStack__list {
 	display: grid;
-	margin-inline: auto;
 	align-items: center;
-	margin-top: 15px;
 	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 	gap: 10px;
 }
@@ -682,6 +704,7 @@ span {
 
 .button__github {
 	background-color: black;
+	color: white;
 }
 
 /* *PROJECTS */
