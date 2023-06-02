@@ -916,7 +916,8 @@ span {
 
 .about__text,
 .about__text a,
-.about__text em {
+.about__text em,
+.about__text b {
 	font-size: 1.5rem;
 	font-family: var(--dm_sans);
 	margin-bottom: 30px;
@@ -1138,7 +1139,8 @@ textarea {
 
 	.about__text,
 	.about__text a,
-	.about__text em {
+	.about__text em,
+	.about__text b {
 	font-size: 1.8rem;
 	line-height: 3rem;
 	}
