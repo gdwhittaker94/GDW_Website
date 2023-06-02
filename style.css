@@ -383,61 +383,64 @@ textarea {
 
 .blob1 {
 	right: 10%;
-	top: 40%;
-	animation: blob1 30s ease-out infinite alternate;
+	top: 70%;
+	animation: blob1 40s ease-out infinite alternate;
 }
 
 .blob2 {
 	left: 10%;
 	top: 10%;
-	animation: blob2 30s ease-out infinite alternate;
+	animation: blob2 50s ease-out infinite alternate;
 }
 
 .blob3 {
-	left: 30%;
+	left: 60%;
 	top: 80%;
-	animation: blob3 20s ease-out infinite alternate;
+	animation: blob3 40s ease-out infinite alternate;
 }
 
 .blob4 {
-	right: 30%;
-	top: 95%;
-	animation: blob4 30s ease-out infinite alternate;
+	right: 40%;
+	top: 45%;
+	animation: blob4 40s ease-out infinite alternate;
 }
 
 .blob5 {
 	right: -5%;
 	top: 5%;
-	animation: blob5 30s ease-out infinite alternate;
+	animation: blob5 40s ease-out infinite alternate;
 }
 
 .blob6 {
 	left: 35%;
-	top: 45%;
-	animation: blob6 20s ease-out infinite alternate;
+	top: 65%;
+	animation: blob6 40s ease-out infinite alternate;
 }
 
 .blob7 {
 	left: 5%;
 	top: 5%;
-	animation: blob7 30s ease-out infinite alternate;
+	animation: blob7 40s ease-out infinite alternate;
 }
 
 .blob8 {
 	left: 30%;
 	bottom: -14%;
-	animation: blob8 20s ease-out infinite alternate;
+	animation: blob8 40s ease-out infinite alternate;
 }
 
 .blob9 {
 	left: 75%;
 	top: 35%;
-	animation: blob9 30s ease-out infinite alternate;
+	animation: blob9 40s ease-out infinite alternate;
 }
 
 @keyframes blob1 {
 	from {
 		transform: translate(0,0)
+	}
+	40% {
+		transform: translate(-200px,-200px)
 	}
 	to {
 		transform: translate(50px,300px)
@@ -448,14 +451,20 @@ textarea {
 	from {
 		transform: translate(0,0)
 	}
+	60% {
+		transform: translate(50px,300px)
+	}
 	to {
-		transform: translate(0px,600px)
+		transform: translate(-50px,600px)
 	}
 }
 
 @keyframes blob3 {
 	from {
 		transform: translate(0,0)
+	}
+	40% {
+		transform: translate(400px,200px)
 	}
 	to {
 		transform: translate(600px,100px)
@@ -484,8 +493,11 @@ textarea {
 	from {
 		transform: translate(0,0)
 	}
+	60% {
+		transform: translate(-400px,-200px)
+	}
 	to {
-		transform: translate(-100px,500px)
+		transform: translate(100px,0px)
 	}
 }
 
@@ -690,6 +702,11 @@ textarea {
 .button:hover, .button:focus {
 	box-shadow: 0px 5px 4px 0px #000000ba;
 	transform: perspective(150px) rotateX(5deg) translateY(-5%);
+}
+
+.button:focus {
+	outline: 2px solid lightgray;
+	outline-offset: 1px;
 }
 
 span {
@@ -1034,7 +1051,8 @@ label {
 }
 
 label > span {
-	margin-right: 5px;
+	margin-right: 3px;
+	margin-bottom: 3px;
 }
 
 input:focus ~ label,
@@ -1044,12 +1062,19 @@ textarea:valid ~ label {
 	top: -28px;
 	font-size: 1.3rem;
 }
-/* The hover effect only works if the input fields have the attribute 'required' applied to them, because otherwise they would be 'valid' just being empty and the label starts off above, instead of floating up on focus */
+/* ¬ The hover effect only works if the input fields have the attribute 'required' applied to them, because otherwise they would be 'valid' just being empty and the label starts off above, instead of floating up on focus */
+
+/* ¬ Tilde selector = general sibling selector. Selects all elements (of x type, here 'label)) that come directly after another element (of Y type, here 'input' and 'textarea').  */
 
 input:focus-visible,
 textarea:focus-visible {
 	border: 2px solid var(--turquoise);
 	border-radius: 5px;
+}
+/* ¬ This selector allows us to get rid of, or simply style in another way, the blue ‘focus’ outline that appears around elements when we tab to them via the keyboard. NB: always use together with the :focus selector.  */
+
+.footer__submit {
+	text-align: center;
 }
 
 .button__submit {
@@ -1060,20 +1085,19 @@ textarea:focus-visible {
 	color: var(--turquoise);
 }
 
-.button__submit:focus {
-	outline: 2px solid lightgray;
-	outline-offset: 1px;
-}
-
 textarea {
 	resize: vertical;
 	line-height: 2.2rem;
 }
 
-.smallprint {
+.smallprint, .smallprint a {
 	text-align: center;
 	font-family: var(--dm_sans);
 	color: rgb(146, 145, 145);
+}
+
+.smallprint p {
+	margin-bottom: 5px;
 }
 
 /* * LARGER SCREENS MEDIA QUERIES */
