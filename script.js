@@ -3,19 +3,19 @@ function log(input) {
 }
 
 // *HAMBURGER MENU (SMALL SCREENS)
-// const hamburger = document.querySelector(".hamburger");
-// const navList = document.querySelector(".nav__list");
-// const navLi = document.querySelectorAll(".nav__li")
+const hamburger = document.querySelector(".hamburger");
+const navList = document.querySelector(".nav__list");
+const navLi = document.querySelectorAll(".nav__li")
 
-// hamburger.addEventListener("click", () => {
-// 	hamburger.classList.toggle("active");
-// 	navList.classList.toggle("active");
-// })
+hamburger.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+	navList.classList.toggle("active");
+})
 
-// navLi.forEach(n => n.addEventListener("click", () => {
-// 	hamburger.classList.toggle("active");
-// 	navList.classList.toggle("active");
-// }))
+navLi.forEach(n => n.addEventListener("click", () => {
+	hamburger.classList.toggle("active");
+	navList.classList.toggle("active");
+}))
 
 // *HERO IMAGE EFFECT
 // const heroImg = document.querySelector(".hero__img");
