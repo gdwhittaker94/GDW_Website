@@ -53,10 +53,10 @@ log(cardImg1, cardImg2, cardImg3)
 
 window.addEventListener('resize', () => {
 	if (window.innerWidth < 768) {
-		cardImg1.src = './img/WWF_eventpage_small.png'
-		cardImg2.src = './img/WWF_website_small.png'
+		cardImg1.src = './img/project_screenshots/wwf_eventpage_small.png'
+		cardImg2.src = './img/project_screenshots/wwf_website_small.png'
 	} else {
-		cardImg1.src = './img/WWF_eventpage.png'
-		cardImg2.src = './img/WWF_website.png'
+		cardImg1.src = './img/project_screenshots/wwf_eventpage.png'
+		cardImg2.src = './img/project_screenshots/wwf_website.png'
 	}
 })

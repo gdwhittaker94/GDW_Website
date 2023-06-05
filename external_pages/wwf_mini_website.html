@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./external_pages.css" hreflang="en" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <title>WWF Mini Website | Guy David Whittaker</title>
+  </head>
+  <body>
+
+    <div id="home">
+      <a href="../index.html">
+        <span class="nav__logo">GDW</span>
+      </a>
+    </div>
+
+    <main class="container container--white">
+      <div class="container__title">
+        WWF Mini Website
+      </div>
+      <div class="container__text">
+        <!-- *SUMMARY SECTION -->
+        <h2 class="container__subtitle container__subtitle--noline">
+          Summary
+        </h2>
+        <p>
+          This project was suggested to me by a friend currently living in Australia and doing a Master's degree related to programming. He sent me this project from his course as a way to practice and test my current frontend developer skills, as it had for him.
+        </p>
+        <p>
+          The aim of the project was to create three linked webpages which mimic those of a real, charitable organisation's website (one home page plus two additional pages), with a strong emphasis on using and managing images effectively. To not overcomplicate the matter, I built the same<a href="https://wwf.org.au/" target="_blank"> WWF Australia website</a> as my friend did - please note, they have since modified the website design since I made this project.
+        </p>
+        <p>
+          This project is the first time I attempted to build to such a high level across multiple pages, and it was a good tester of all the frontend developer knowledge I had learned up until this moment. I was still unsure of my abilities before starting this project, so to relax myself I decided not to set the bar too high and just focused on trying to create webpages that looked and felt like the original ones. Therefore, I didn't focus too much on the actual webpage content on this project. I noticed a continuing improvement and comfortableness as I went through the pages and once finished I was happy with the final results.
+        </p>
+        <!-- *SUMMARY VISUALS -->
+        <ul class="container__summary-list">
+          <li class="container__summary-li" >
+            HTML5
+          </li>
+          <li class="container__summary-li">
+            CSS
+          </li>
+          <li class="container__summary-li">
+            Responsive Web Design
+          </li>
+          <li class="container__summary-li">
+            Javascript (ES6+)
+          </li>
+        </ul>
+        <div class="summary__buttons">
+          <!-- TODO: Link live site -->
+          <a href="#" target="_blank">
+            <button class="button button__discover">View Live Project <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+          </a>
+          <a href="https://github.com/gdwhittaker94/WWF_Mini_Website" target="_blank">
+            <button class="button button__sourceCode">View Source Code <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+          </a>
+        </div>
+      </div>
+
+      <!-- *IMAGE PREVIEWS -->
+
+      <div class="container__images">
+        <p>Home Page</p>
+        <img src="../img/project_screenshots/wwf_miniweb_home.png" alt="A screenshot of the main area of the WWF Mini Website Home Page">
+        <p>News Page</p>
+        <img src="../img/project_screenshots/wwf_miniweb_news.png" alt="A screenshot of the main area of the WWF Mini Website News Page">
+        <p>Meet the Team Page</p>
+        <img src="../img/project_screenshots/wwf_miniweb_team.png" alt="A screenshot of the main area of the WWF Mini Website Meet the Team Page">
+      </div>
+
+
+      <!-- *BUILDING THE PROJECT SECTION -->
+      <div class="container__info">
+        <div class="container__top">
+          <h2 class="container__subtitle container__subtitle--long">
+            Building the project <span>🛠️</span>
+          </h2>
+          <p>
+            The most difficult part of this project was probably the home page. Not only because it was the first page I built and so I was feeling less confident than when I built the second and third pages, but because of the amount of images on it and because of the different interesting features included on it.
+          </p>
+          <p>
+            For example, on this page we can see the first ever 'sticky' navbar I have built and the first ever image carousel I have built. I also built a hamburger menu for smaller screen sizes with an attractive menu which appears and covers the whole page when clicked, and finally I built two image grids using CSS Grid with an additional orange border which appears on hover.
+          </p>
+          <div class="container__images">
+            <p>Sticky navbar, image carousel, hamburger menu</p>
+            <img src="../img/project_screenshots/wwf_miniweb_GIF1.gif" alt="A GIF showing the sticky navbar, image carousel and hamburger menu from the WWF Mini Website homepage" id="gif1">
+            <p>Image Grids</p>
+            <img src="../img/project_screenshots/wwf_miniweb_GIF2.gif" alt="A GIF showing the sticky navbar, image carousel and hamburger menu from the WWF Mini Website homepage">
+          </div>
+          <p>
+            The other two pages felt slightly easier once I had the first one built. Additionally, the bottom section of the 3 pages is basically identical, and the 2 additional pages emulated each other a lot design wise which saved me from writing up a lot of new CSS code.
+          </p>
+          <p>
+            However, both of the new pages provided their own challenges. For the news page it was correctly creating the little news cards with additional hover effects. For the card, to get the division between image and text I  eventually worked out that it was better to create a flexbox container with two divs inside of it. The first div would have a background image which I then applied background properties to in order to make sure the image scale and ratio matched the size of the box. I also gave it a fixed with and the other div a flex-basis of 1 so the text part grew to occupy the remaining card space.
+          </p>
+          <p>
+            To get the effect where the picture seemed to become more saturated on hover I tried out an idea where a slightly opaque white ::after pseudo-element on the card would disappear on hover, making it look like the image became more saturated. It worked!
+          </p>
+          <div class="container__images">
+            <p>News Card Hover Effect</p>
+            <img src="../img/project_screenshots/wwf_miniweb_GIF3.gif" alt="A GIF showing the news cards images appearing more saturated on hover and the text changing color from black to orange">
+          </div>
+          <p>
+            For the meet the team page the main challenge was creating a small image gallery of people which had the effect of enlarging each image on hover and changing the name color from orange to black. I was unsure at first whether to use CSS Flexbox or Grid for this task, but eventually thought that Grid would work better as the layout was quite formulaic. However, then I struggled to get the images to correctly scale up and down with the viewport. After looking at <a href="./education.html#myNotes">my notes</a> I came across the value of "repeat(auto-fit, minmax(A, B))" for the grid-template-columns property and then I tried using minmax(A, B) for the grid-template rows property. To much excitement, this worked!
+          </p>
+          <p>
+            Finally it was a question of getting the text to change color when the user hovered over just the image. After thinking about it and playing around I eventually realised that if I wrapped the image in a div, set the text color of that div to orange by default but to black on hover, when the user hovered over the image, this would also trigger the text change for the div it was contained inside of. It's moments like these which have helped me truly understand the relationship between HTML elements and how the 'cascade' of CSS works.
+          </p>
+          <div class="container__images">
+            <p>Image Gallery Layout and Effects</p>
+            <img src="../img/project_screenshots/wwf_miniweb_GIF4.gif" alt="A GIF showing the meet the team image gallery and the size and text color change effects on hover.">
+          </div>
+          <h2 class="container__subtitle container__subtitle--long">
+            Project Reflection <span>🤔</span>
+          </h2>
+          <p>
+            I definitely flexed and strengthened my frontend development muscles with this project, particularly in regards to CSS and responsive web-design! It was very useful for putting into more serious practice a lot of what I had learned about CSS up until that moment, or realising the gaps in my knowledge. In general this project made me realise that yes I can build high-quality looking websites, and that felt good!
+          </p>
+          <p>
+            I also dabbled with Javascript in this project. Granted it's not much (the hamburger menu and image carousels), and I needed help in order to build them, but at this point I was still taking my first steps with Javascript after having studied it for a while and it felt good to have practiced with it.
+          </p>
+          <p>
+            What I found a bit odd about the project requirements was the need to use HTML media queries within the &#60;head&#62; tag instead of CSS media queries like I had been seeing online.
+            Although it was good to learn about and use this other method of creating responsive websites, I soon discoverd I didn't like it because it requires several, individual css files. This resulted in masses of code duplication, lots of manual adding and removing of CSS code, and often left me confused as I was trying to manage lots of similar code across 3 documents.
+          </p>
+        <a href="#home" class="button--totop">
+          <button>
+            Back to top ⏫
+          </button>
+        </a>
+      </div>
+    </main>
+
+  </body>
+</html>

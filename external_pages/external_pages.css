@@ -101,7 +101,7 @@ strong {
 
 #home {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 5px;
 }
 
@@ -112,7 +112,7 @@ strong {
 }
 
 .container {
-    width: min(768px, 85%);
+    width: min(820px, 85%);
     margin: 80px auto;
     padding: 20px;
     text-align: left;
@@ -123,7 +123,7 @@ strong {
 
 .container--white {
 	background-color: #fff;
-	border: 3px solid var(--turquoise);
+	border: 2px solid var(--turquoise);
 }
 
 .container__title  {
@@ -195,6 +195,10 @@ strong {
 	font-size: 1.6rem;
     line-height: 2.4rem;
 	font-family: var(--dm_sans);
+}
+
+#gif1 {
+	margin-bottom: 30px;
 }
 
 .red {
@@ -381,18 +385,27 @@ a {
 }
 
 .container__images {
-	margin-bottom: 50px;
+	margin-bottom: 40px;
+}
+
+.container__images--education {
+	margin-bottom: 20px;
 }
 
 .container__images p {
-	margin-block: 10px;
+	margin-block: 20px;
 	text-align: center;
+	font-weight: 600;
 }
 
 .container__images img {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+}
+
+#notesImg1 {
+	margin-bottom: 30px;
 }
 
 /* BACK TO TOP BUTTON */
