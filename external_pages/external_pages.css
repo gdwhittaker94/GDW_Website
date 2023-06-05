@@ -1,0 +1,432 @@
+/**CSS Normalisation (https://necolas.github.io/normalize.css/) */
+
+/*!========== Universal/Default Settings ==========*/
+html {
+	line-height: 1.15;
+	/*Correct the line height in all browsers */
+	-webkit-text-size-adjust: 100%;
+	/*Prevent font-size adjustments after orientation changes (IOS)*/
+	scroll-behavior: smooth;
+	/*Page scrolls smoothly for internal links, not instantly*/
+}
+
+*,
+body,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	/*Remove the margin, padding and border of all elements (all browsers)*/
+	font-size: 10px;
+	/*10px = 1em -> pixel size/10 = #em (16px=1.6em)*/
+	box-sizing: border-box;
+	/*The full area/size of an element`s box is measured by its total height and width, not just the content section. The different box sections adjust to the defined box size */
+}
+
+/*!========== Common Elements ==========*/
+main {
+	display: block;
+	/*Render main element consistently (IE)*/
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0;
+	/*Correct font-size and margin for h1 elements within section and article contexts (Chrome, Firefox, Safari) */
+}
+
+img {
+	border-style: none;
+	/*Remove the border on images inside links (IE10)*/
+	max-inline-size: 100%;
+	/*Make image responsive but without allowing it to outgrow its original size*/
+	display: block;
+	/*Removes the small gap that appears under images */
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	/*Add the correct box-sizing (Firefox)*/
+	overflow: visible;
+	/*Show overflow (Edge, IE)*/
+}
+
+pre {
+	font-family: monospace, monospace;
+	/*Correct the inheritance and scaling of font size in all browsers*/
+	font-size: 1em;
+	/*Correct the odd em font sizing in all browsers.*/
+}
+
+a {
+	background-color: transparent;
+	/*Remove the gray background on active links (IE10)*/
+}
+
+a,
+li,
+:link,
+:visited {
+	text-decoration: none;
+	/*Remove default link underline styling*/
+}
+
+ul,
+ol {
+	list-style: none;
+	/*List markers are not commonly needed*/
+}
+
+b,
+strong {
+	font-weight: bolder;
+	/*Add the correct font weight (Chrome, Edge, Safari)*/
+}
+
+/**===========================CUSTOM-STYLES==============================*/
+
+:root {
+	--dm_serif: 'DM Serif Display', serif;
+	/* Serif: 400, 400 (Italic) */
+	--dm_sans: 'DM Sans', sans-serif;
+	/* Sans: 400, 500, 700 (+ Italics) */
+
+	--turquoise: rgb(47, 178, 165);
+	--brightYellow: #FFF000;
+
+	/* color-scheme: light; */
+}
+
+#home {
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.nav__logo {
+	font-size: 3rem;
+	font-family: var(--dm_serif);
+	color: black;
+}
+
+.container {
+    width: min(768px, 85%);
+    margin: 80px auto;
+    padding: 20px;
+    text-align: left;
+    background: rgb(247, 255, 254);
+    border-radius: 10px;
+    border: 1px solid var(--turquoise);
+}
+
+.container--white {
+	background-color: #fff;
+	border: 3px solid var(--turquoise);
+}
+
+.container__title  {
+    font-size: 4rem;
+    font-family: var(--dm_serif);
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container__title span {
+	font-size: 4rem;
+	display: inline-block;
+}
+
+.container__title span:hover {
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@keyframes shake-horizontal {
+	0%,
+	100% {
+    transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+    transform: translateX(-3px);
+	}
+	20%,
+	40%,
+	60% {
+    transform: translateX(3px);
+	}
+	80% {
+    transform: translateX(1px);
+	}
+	90% {
+    transform: translateX(-1px);
+	}
+}
+
+
+.container__title::after {
+	content: ' ';
+	border: 2px solid var(--turquoise);
+	height: 1px;
+	width: 320px;
+	position: absolute;
+	left: 50%;
+    bottom: -10px;
+	transform: translateX(-50%);
+}
+
+.container__text {
+    margin-bottom: 30px;
+    padding-inline: 5%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.container__text p:last-of-type {
+	margin-bottom: 20px;
+}
+
+.container__text p, i, .red, .blue, .green, .purple, .container__images p {
+	font-size: 1.6rem;
+    line-height: 2.4rem;
+	font-family: var(--dm_sans);
+}
+
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+.green {
+	color: green;
+}
+.purple {
+	color: purple;
+}
+
+.container__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container__top, .container__bottom {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5%;
+    position: relative;
+}
+
+.container__subtitle {
+    font-size: 2.5rem;
+    font-family: var(--dm_serif);
+    margin-bottom: 35px;
+}
+
+.container__subtitle span {
+	font-size: 2.5rem;
+	display: inline-block;
+}
+
+.container__subtitle span:hover {
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+.container__subtitle::after {
+	content: ' ';
+	border: 2px solid var(--turquoise);
+	height: 1px;
+	width: 200px;
+	position: absolute;
+	left: 5%;
+    top: 40px;
+}
+
+.container__subtitle--long::after {
+	width: 270px;
+}
+
+.container__subtitle--noline {
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+.container__subtitle--noline::after {
+	display: none;
+}
+
+.container__subtitle2::after {
+	width: 150px;
+}
+
+.container__summary-list, .summary__buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.summary__buttons {
+	margin-bottom: 20px;
+}
+
+.container__summary-li {
+	border-radius: 3px;
+	padding: 10px;
+	font-size: 1.3rem;
+	font-weight: 700;
+	background: white;
+	position: relative;
+	text-align: center;
+
+	border: 2px solid var(--turquoise);
+	color: rgba(0, 0, 0, 0.7);
+	font-family: var(--dm_sans);
+}
+
+.button {
+	padding: 8px 10px;
+	font-size: 1.6rem;
+	font-family: var(--dm_sans);
+	font-weight: 500;
+	border-radius: 5px;
+	line-height: 1.6rem;
+	color: white;
+	transition: transform 100ms;
+}
+
+.button:hover, .button:focus {
+	box-shadow: 0px 5px 4px 0px #000000ba;
+	transform: perspective(150px) rotateX(5deg) translateY(-5%);
+}
+
+.button span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button:focus {
+	outline: 2px solid lightgray;
+	outline-offset: 1px;
+}
+
+.button__discover {
+	color: black;
+	background: rgb(238, 228, 28);
+	background: linear-gradient(
+		120deg,
+		rgba(238, 228, 28, 0.4158431092271293) 35%,
+		rgba(47, 178, 165, 0.5) 100%
+	);
+	box-shadow: 2px 2px 3px 0px rgba(151, 151, 151, 0.54),
+		2px 2px 14px 0px rgb(214 213 213 / 54%);
+}
+
+.button__sourceCode {
+	color: black;
+	background: rgb(238, 228, 28);
+	background: linear-gradient(
+		320deg,
+		rgba(238, 228, 28, 0.4158431092271293) 35%,
+		rgba(47, 178, 165, 0.5) 100%
+	);
+	box-shadow: 2px 2px 3px 0px rgba(151, 151, 151, 0.54),
+		2px 2px 14px 0px rgb(214 213 213 / 54%);
+}
+
+.container__top p, .container__bottom p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: var(--dm_sans);
+    margin-bottom: 30px;
+}
+
+a {
+	font-size: 1.6rem;
+    line-height: 2.4rem;
+	font-family: var(--dm_sans);
+	color: rgb(27, 148, 188)
+}
+
+.container__bottom .container__list .container__item {
+    margin-bottom: 30px;
+}
+
+.container__item {
+    list-style: disc;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    font-family: var(--dm_sans);
+    font-weight: 500;
+}
+
+.container__item, .container__item a {
+    font-size: 1.7rem;
+}
+
+.container__item a {
+    color: rgb(27, 148, 188)
+}
+
+.container__item a img {
+    display: inline;
+    vertical-align: middle;
+}
+
+.container__images {
+	margin-bottom: 50px;
+}
+
+.container__images p {
+	margin-block: 10px;
+	text-align: center;
+}
+
+.container__images img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* BACK TO TOP BUTTON */
+
+.button--totop {
+	margin: 0 auto;
+}
+
+.button--totop button {
+	max-width: fit-content;
+	font-size: 1.6rem;
+    font-family: var(--dm_sans);
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid var(--turquoise);
+	background: white;
+	color: var(--turquoise);
+	cursor: pointer;
+}
+
+.button--totop button:hover {
+	transform: perspective(150px) rotateX(5deg) translateY(-5%);
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.button--totop button:focus {
+	outline: 2px solid lightgray;
+	outline-offset: 1px;
+}
+
+@media screen and (max-width:450px) {
+
+    .container__title::after {
+        width: 70vw;
+    }
+
+}

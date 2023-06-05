@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./external_pages.css" hreflang="en" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <title>WWF Event Page Project | Frontend Developer</title>
+  </head>
+  <body>
+
+    <div id="home">
+      <a href="../index.html">
+        <span class="nav__logo">GDW</span>
+      </a>
+    </div>
+
+    <main class="container container--white">
+      <div class="container__title">
+        WWF Event Page
+      </div>
+      <div class="container__text">
+        <!-- *SUMMARY SECTION -->
+        <h2 class="container__subtitle container__subtitle--noline">
+          Summary
+        </h2>
+        <p>
+          This project was suggested to me by a friend currently living in Australia and doing a Master's degree related to programming. He sent me this project from his course as a way to practice and test my current frontend developer skills, as it had for him.
+        </p>
+        <p>
+          The aim of the project was to mimic a real webpage from a non-profit organisation which advertises a charity event, plus adhere to some extra requirements laid out by the course professor which are designed to test certain skills. To not overcomplicate the matter, I built the same<a href="https://support.worldwildlife.org/site/SPageServer/?NONCE_TOKEN=4766A0DB3CE84C0025981400E9A751D0&pagename=panda_nation_chicago_marathon" target="_blank"> WWF event webpage</a> as my friend did, which advertises and details WWF's participation in the Chicago marathon 2023.
+        </p>
+        <p>
+          For this project I imagined that the WWF organisation had asked me personally to design this webpage for them. I used the project brief as my guide and the live website as my design template. I am very satisfied with the final result and its similarity to the original design, and indeed I think the extra add-ons set out by the requirements add a nice touch to the page - although at times this meant deviating from the original design somewhat.
+        </p>
+        <!-- *SUMMARY VISUALS -->
+        <ul class="container__summary-list">
+          <li class="container__summary-li" >
+            HTML5
+          </li>
+          <li class="container__summary-li">
+            CSS
+          </li>
+          <li class="container__summary-li">
+            Responsive Web Design
+          </li>
+          <li class="container__summary-li">
+            Javascript (ES6+)
+          </li>
+        </ul>
+        <div class="summary__buttons">
+          <!-- TODO: Link live site -->
+          <a href="#" target="_blank">
+            <button class="button button__discover">View Live Project <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+          </a>
+          <a href="https://github.com/gdwhittaker94/WWF_Event_Page" target="_blank">
+            <button class="button button__sourceCode">View Source Code <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+          </a>
+        </div>
+      </div>
+
+      <!-- *IMAGE PREVIEWS -->
+
+      <div class="container__images">
+        <p>My Design</p>
+        <img src="../img/project_screenshots/wwf_eventpage1.png" alt="A screenshot of the main area of Whittaker's WWF Event Page">
+        <p>
+          Original Design
+        </p>
+        <img src="../img/project_screenshots/wwf_eventpage_original.png" alt="A screenshot of the main area of the original WWF Event Page">
+      </div>
+
+
+      <!-- *BUILDING THE PROJECT SECTION -->
+      <div class="container__info">
+        <div class="container__top">
+          <h2 class="container__subtitle container__subtitle--long">
+            Building the project <span>🛠️</span>
+          </h2>
+          <p>
+            In my experience the navigation/header area is one of the trickiest parts of a page to build, and this project was no different. Here there are a large amount of items which all sit together, and therefore lots of moving parts to resize and reorganise at different screen widths. In the original design there is one layout for smaller screens and then another one for larger screens another. To mimic this, I built built two separate nav areas for this webpage in the HTML document, turning the relevant one on or off depending on the screen size via media queries.
+          </p>
+          <div class="container__images">
+            <img src="../img/project_screenshots/wwf_eventpageGIF1.gif" alt="A GIF showing the changing webpage layout at different screen sizes">
+          </div>
+          <p>
+            One of the project requirements was to have at least 6 images displayed on the webpage. The original website doesn't have 6 images displayed, so I decided that the best way to include 6 images without ruining the original design too much would be to include an image carousel (slider). At the same time, I could take advantage of the extra 'real estate' on my webpage provided by the picture areas to include key race information - something I thought a real client might appreciate.
+          </p>
+          <p>
+            This minimum image requirement was also present in <a href="./www_mini_website" target="_blank">another project</a> in which I also used an image carousel. I could have just copied that one and reused it, however, I wanted to improve upon the last design and get more practice with Javascript, and so I found <a href="https://www.youtube.com/watch?v=rTB-UNl_B_Y&list=PLQLXmxvCrf2npA-3g7A-SxLHmN1E89C3r&index=8" target="_blank">this useful video tutorial</a> which helped guide me through building an image slider that also includes clickable dots at the bottom of the image.
+          </p>
+          <div class="container__images">
+            <img src="../img/project_screenshots/wwf_eventpageGIF2.gif" alt="A GIT showing the image carousel at work">
+          </div>
+          <p>
+            Once I had built the top half of the webpage, the bottom half was not too difficult. I kept nearly all the content within a wrapper container so that it did not spread too wide and look ugly. Additionally, I added a Youtube video and a Google maps link which was again one of the project requirements and which differentiated from the original design, but which I think they work really well. I can easily see the real website including such content to help their users learn more about the event. Lastly, and to my surprise, I found embedding these two things really easy due to in-built website embedding features on both Youtube videos and Google maps.
+          </p>
+          <div class="container__images">
+            <img src="../img/project_screenshots/wwf_eventpage4.png" alt="A screenshot of the main area of the WWF Event Page">
+          </div>
+          <h2 class="container__subtitle container__subtitle--long">
+            Challenges and Takeaways <span>🤔</span>
+          </h2>
+          <p>
+            This project has given me a lot of confidence in terms of my webpage-building skills as here I built a replica professional website from scratch, by myself, and which looks pretty close to the actual WWF website itself. Because of this project, I now really believe in my ability to build beautiful, functional and responsive websites and I look forward to learning more and getting better with each new project.
+          </p>
+          <p>
+            However, I recognise I'm not perfect and one of those areas I need to work on is with Javascript. The more complex image carousel, the countdown timer, and the drop-down menu were all created via help from tutorials or websites. I understand most of the code I'm writing and it makes sense to me when I read it back, but I still need to work on being able to produce it myself and without external help if possible.
+          </p>
+          <p>
+            Lastly, like my <a href="./www_mini_website" target="_blank">other WWF-related project</a>, I found the project requirement of using HTML media queries within the &#60;head&#62; tag to be a bit strange, especially since all my online learning had indicated that the industry-standard way of using media queries is within a CSS file. Although it was good to use and understand this other method of creating responsive websites, I discoverd I didn't like it because ot requires several, individual css files. This results in masses of code duplication, lots of manual adding and removing of CSS code, and often confusion for me as I was trying to manage similar code across 3 documents.
+          </p>
+        <a href="#home" class="button--totop">
+          <button>
+            Back to top ⏫
+          </button>
+        </a>
+      </div>
+    </main>
+
+  </body>
+</html>

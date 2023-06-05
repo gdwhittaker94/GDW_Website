@@ -1,0 +1,11 @@
+Why is this project important to you? What inspired it? Why did you choose to build this?
+
+What are the major features that make it unique? How does it compare to existing products like it?
+
+What did you start with? Was this built from scratch? Did you have a team? If so, which parts did you do? Where did the design come from? Was there any collaboration?
+
+What was the hardest part of building this product? Where did you get stuck along the way?
+
+When you did get stuck, how did you resolve it? How did you overcome the obstacles you faced?
+
+What did you learn from doing this project? How has it affected the work you’ve done since then?

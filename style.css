@@ -990,11 +990,10 @@ span {
 
 .about__buttons {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
 	justify-items: center;
 	gap: 15px;
 	align-items: center;
-	margin-top: 30px;
 }
 .about__buttons a {
 	max-width: fit-content;
@@ -1012,9 +1011,6 @@ span {
 	color: var(--turquoise);
 }
 
-.button__linkedin2 {
-	margin-left: 0px;
-}
 
 /* *FOOTER */
 
@@ -1216,6 +1212,10 @@ textarea {
 		4px 4px 0px black,
 		5px 5px 0px black,
 		6px 6px 0px black;
+	}
+
+	.button__linkedin2 {
+		margin-left: 30px;
 	}
 
 	.footer__title {
