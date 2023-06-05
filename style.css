@@ -372,103 +372,65 @@ textarea {
 }
 
 /* * BLOBZ */
+/* (X+ >, Y- ^) */
 
 .blob {
 	width: 40px;
 	height: 40px;
 	z-index: -2;
 	position: absolute;
-	filter: blur(6px);
+	filter: blur(8px);
 }
 
 .blob1 {
 	right: 10%;
-	top: 70%;
-	animation: blob1 40s ease-out infinite alternate;
-}
-
-.blob2 {
-	left: 10%;
 	top: 10%;
-	animation: blob2 50s ease-out infinite alternate;
-}
-
-.blob3 {
-	left: 60%;
-	top: 80%;
-	animation: blob3 40s ease-out infinite alternate;
-}
-
-.blob4 {
-	right: 40%;
-	top: 45%;
-	animation: blob4 40s ease-out infinite alternate;
-}
-
-.blob5 {
-	right: -5%;
-	top: 5%;
-	animation: blob5 40s ease-out infinite alternate;
-}
-
-.blob6 {
-	left: 35%;
-	top: 65%;
-	animation: blob6 40s ease-out infinite alternate;
-}
-
-.blob7 {
-	left: 5%;
-	top: 5%;
-	animation: blob7 40s ease-out infinite alternate;
-}
-
-.blob8 {
-	left: 30%;
-	bottom: -14%;
-	animation: blob8 40s ease-out infinite alternate;
-}
-
-.blob9 {
-	left: 75%;
-	top: 35%;
-	animation: blob9 40s ease-out infinite alternate;
+	animation: blob1 50s linear infinite alternate;
 }
 
 @keyframes blob1 {
 	from {
 		transform: translate(0,0)
 	}
-	40% {
-		transform: translate(-200px,-200px)
-	}
 	to {
-		transform: translate(50px,300px)
+		transform: translate(-400px, 100px)
 	}
+}
+
+.blob2 {
+	right: 40%;
+	top: 30%;
+	animation: blob2 30s linear infinite alternate;
 }
 
 @keyframes blob2 {
 	from {
 		transform: translate(0,0)
 	}
-	60% {
-		transform: translate(50px,300px)
-	}
 	to {
-		transform: translate(-50px,600px)
+		transform: translate(400px, 200px)
 	}
+}
+
+.blob3 {
+	right: 0%;
+	top: 60%;
+	animation: blob3 30s linear infinite alternate;
 }
 
 @keyframes blob3 {
 	from {
 		transform: translate(0,0)
 	}
-	40% {
-		transform: translate(400px,200px)
-	}
 	to {
-		transform: translate(600px,100px)
+		transform: translate(-400px, 100px)
 	}
+}
+
+.blob4 {
+	right: 33%;
+	top: 80%;
+	animation: blob4 50s linear infinite alternate;
 }
 
 @keyframes blob4 {
@@ -476,8 +438,14 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(-600px,-560px)
+		transform: translate(400px, 100px)
 	}
+}
+
+.blob5 {
+	left: 40%;
+	top: 40%;
+	animation: blob5 50s linear infinite alternate;
 }
 
 @keyframes blob5 {
@@ -485,20 +453,29 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(-500px, 200px)
+		transform: translate(-400px, -300px)
 	}
+}
+
+.blob6 {
+	left: 40%;
+	top: 10%;
+	animation: blob6 30s linear infinite alternate;
 }
 
 @keyframes blob6 {
 	from {
 		transform: translate(0,0)
 	}
-	60% {
-		transform: translate(-400px,-200px)
-	}
 	to {
-		transform: translate(100px,0px)
+		transform: translate(-500px, 300px)
 	}
+}
+
+.blob7 {
+	left: 5%;
+	top: 90%;
+	animation: blob7 30s linear infinite alternate;
 }
 
 @keyframes blob7 {
@@ -506,8 +483,14 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(800px,100px)
+		transform: translate(500px, -500px)
 	}
+}
+
+.blob8 {
+	left: 32%;
+	top: 75%;
+	animation: blob8 50s linear infinite alternate;
 }
 
 @keyframes blob8 {
@@ -515,8 +498,14 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(300px,50px)
+		transform: translate(-600px, -50px)
 	}
+}
+
+.blob9 {
+	left: 50%;
+	top: 50%;
+	animation: blob9 50s ease-in infinite alternate;
 }
 
 @keyframes blob9 {
@@ -524,7 +513,52 @@ textarea {
 		transform: translate(0,0)
 	}
 	to {
-		transform: translate(100px,-100px)
+		transform: translate(1000px, -650px)
+	}
+}
+
+.blob10 {
+	right: 50%;
+	top: 50%;
+	animation: blob10 40s ease-in infinite alternate;
+}
+
+@keyframes blob10 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(-1000px, -760px)
+	}
+}
+
+.blob11 {
+	right: 50%;
+	top: 70%;
+	animation: blob11 50s ease-in infinite alternate;
+}
+
+@keyframes blob11 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(-1000px, 1050px)
+	}
+}
+
+.blob12 {
+	left: 50%;
+	top: 70%;
+	animation: blob12 40s ease-in infinite alternate;
+}
+
+@keyframes blob12 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(1000px, 760px)
 	}
 }
 
