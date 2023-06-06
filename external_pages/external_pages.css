@@ -123,7 +123,7 @@ strong {
 
 .container--white {
 	background-color: #fff;
-	border: 2px solid var(--turquoise);
+	border: 2px solid rgba(47, 178, 165, 0.5);
 }
 
 .container__title  {
@@ -352,6 +352,10 @@ strong {
     margin-bottom: 30px;
 }
 
+.container__top--inset {
+	padding-left: 20px;
+}
+
 a {
 	font-size: 1.6rem;
     line-height: 2.4rem;
@@ -386,6 +390,8 @@ a {
 
 .container__images {
 	margin-bottom: 40px;
+	max-width: 90%;
+	margin-inline: auto;
 }
 
 .container__images--education {
@@ -402,6 +408,11 @@ a {
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+}
+
+.container__images--horizontal {
+	max-width: 80%;
+	margin: 0 auto;
 }
 
 #notesImg1 {

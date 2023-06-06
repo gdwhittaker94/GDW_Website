@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./external_pages.css" hreflang="en" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
+    <title>Testimonials Grid | Guy David Whittaker</title>
+  </head>
+  <body>
+
+    <div id="home">
+      <a href="../index.html">
+        <span class="nav__logo">GDW</span>
+      </a>
+    </div>
+
+    <main class="container container--white">
+      <div class="container__title">
+        Testimonials Grid
+      </div>
+      <div class="container__text">
+        <!-- *SUMMARY SECTION -->
+        <h2 class="container__subtitle container__subtitle--noline">
+          Summary
+        </h2>
+        <p>
+          This project comes from <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank"> frontendmentor.io</a> which has lots of project challenges for frontend developers to choose from in order to practice their skills.
+        </p>
+        <p>
+          The aim of the project was to replicate a testimonials grid layout as specified in the page's project brief and provided design documents. I used this project to practice both my flexbox and grid skills, building the same testimonials grid twice to practice each layout type and compare the differences. Overall this was an enjoyable practice project and I am happy with the end result.
+        </p>
+        <!-- *SUMMARY VISUALS -->
+        <ul class="container__summary-list">
+          <li class="container__summary-li" >
+            HTML5
+          </li>
+          <li class="container__summary-li">
+            CSS
+          </li>
+          <li class="container__summary-li">
+            Flexbox
+          </li>
+          <li class="container__summary-li">
+            Grid
+          </li>
+        </ul>
+        <div class="summary__buttons">
+          <a href="https://gdwhittaker94.github.io/testimonials_grid/" target="_blank">
+            <button class="button button__discover">View Live Project <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+          </a>
+          <a href="https://github.com/gdwhittaker94/testimonials_grid" target="_blank">
+            <button class="button button__sourceCode">View Source Code <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+          </a>
+        </div>
+      </div>
+
+      <!-- *IMAGE PREVIEWS -->
+
+      <div class="container__images">
+        <p>Flexbox Version</p>
+        <img src="../img/project_screenshots/testimonials_flexbox.png" alt="A screenshot of the flexbox version of the testimonial grid page">
+        <p>Grid Version</p>
+        <img src="../img/project_screenshots/testimonials_grid.png" alt="A screenshot of the grid version of the testimonial grid page">
+      </div>
+
+
+      <!-- *BUILDING THE PROJECT SECTION -->
+      <div class="container__info">
+        <div class="container__top">
+          <h2 class="container__subtitle container__subtitle--long">
+            Building the project <span>🛠️</span>
+          </h2>
+          <p>
+            I found flexbox and grid to be quite confusing topics when I first started studying them. It wasn't until I started building lots of things using these layout structures that I fully grasped how they work and their unique intricacies. So when I saw this project I thought it would be a perfect opportunity to further my Flexbox and Grid skills.
+          </p>
+          <p>
+            I started with the mobile designs first as I had learned this is best practice, and which for both layouts was fairly easy. For the flex layout I just put the cards within one general wrapping container and then applied margin between each testimonial card. For the grid I turned the main wrapping container into a grid, applied a gap value and the same look was achieved. The internal part of the cards was done using flexbox and having three different containers which flowed in a column direction, followed by individual tweaking of each container in order to get the desired appearance (including several smaller flexboxes for the top section).
+          </p>
+          <div class="container__images">
+            <p>Mobile Version</p>
+            <img src="../img/project_screenshots/testimonials_mobile.png" alt="The mobile version of the testimonials grid website" class="container__images--horizontal">
+          </div>
+          <p>
+            The tablet/desktop version is where things got slightly more complicated. In order to create the unique testimonials grid layout with flexbox I first sketched it out on paper and then began dividing the sketch into different segments. This left me knowing that I needed to create a left and right container, and within the left container to create a top and bottom container. Then, in order to get the right sizings for each card I then played around with the flex-basis property on each one instead of using traditional length values (px, % etc) - a property I hadn't really used before. This helped me appreciate, as odd as it may sound, that 100% really means 100% of the available space! This is because I discoverd that if the combined card size and gap size totalled more than 100%, elements overflow their container - not good!
+          </p>
+          <p>
+            I found creating the testimonials grid with CSS Grid much simpler and easier to do. I could have made the grid via 2 different methods:
+          </p>
+          <p class="container__top--inset">
+            1) To have used the grid-template-columns property to have made a grid with 4 equally sized columns, and then to have done some individual adjustments to the card sizings within the grid using the 'span' value or the grid-column and grid-row shorthand properties.
+          </p>
+          <p class="container__top--inset">
+            2) To use the grid-template-areas property to visually describe how much area each card should occupy within the described grid layout.
+          </p>
+          <p>
+            I decided to opt for the latter option. Not only because it seemed easier to me, but because I had seen many people online recommended this method and I wanted to get some practice with it. Indeed creating the testimonials grid this way was fairly easy and better yet required very little CSS code overall.
+          </p>
+          <div class="container__images">
+            <p>Grid Layout Code</p>
+            <img src="../img/project_screenshots/testimonials_code.png" alt="A screenshot of the CSS code required to create the grid version of the testimonials grid" class="container__images--horizontal">
+          </div>
+          <h2 class="container__subtitle container__subtitle--long">
+            Project Reflection <span>🤔</span>
+          </h2>
+          <p>
+            This project gave me a good general sense of each CSS layout model and how the different properties which each one brings can be best utilised in order to create a design like this one.
+          </p>
+          <p>
+            I ultimately found that, at least for a design like this, that CSS Grid was undeniably quicker and easier to use than CSS Flexbox. Flexbox required a lot more control and layering in ordered to get the desired result, whereas with Grid the testimonial grid layout could be achieved with just one property and a couple of values. However, one drawback of this method I found is that there is less precise control of the size of the cards. As a result, the Grid Version looks slightly less like the original design than the Flexbox one, whose cards sizes I could control precisely using flex-basis.
+          </p>
+        <a href="#home" class="button--totop">
+          <button>
+            Back to top ⏫
+          </button>
+        </a>
+      </div>
+    </main>
+
+  </body>
+</html>
