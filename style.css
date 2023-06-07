@@ -355,6 +355,15 @@ textarea {
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 	}
 
+	.nav__list.notactive {
+		width: 1px;
+		padding: 0;
+	}
+
+	.nav__list.notactive li {
+		font-size: 1px;
+	}
+
 	.nav__list.active {
 		left: 100%;
 	}

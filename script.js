@@ -9,6 +9,7 @@ const navLi = document.querySelectorAll(".nav__li")
 
 hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("active");
+	navList.classList.toggle("notactive");
 	navList.classList.toggle("active");
 })
 
