@@ -233,6 +233,10 @@ textarea {
 	/* color-scheme: light; */
 }
 
+body {
+	overflow-x: hidden;
+}
+
 /* *NAVBAR */
 
 .nav__container {
@@ -383,6 +387,15 @@ textarea {
 /* * BLOBZ */
 /* (X+ >, Y- ^) */
 
+.blob-container {
+	height: 120vh;
+	width: 100vw;
+	overflow: hidden;
+	position: absolute;
+	top: -80px;
+	z-index: -1;
+}
+
 .blob {
 	width: 40px;
 	height: 40px;
@@ -390,6 +403,11 @@ textarea {
 	position: absolute;
 	filter: blur(8px);
 }
+
+.blob2, .blob5, .blob9, .blob10 {
+	display: none;
+}
+
 
 .blob1 {
 	right: 10%;
@@ -403,21 +421,6 @@ textarea {
 	}
 	to {
 		transform: translate(-400px, 100px)
-	}
-}
-
-.blob2 {
-	right: 40%;
-	top: 30%;
-	animation: blob2 30s linear infinite alternate;
-}
-
-@keyframes blob2 {
-	from {
-		transform: translate(0,0)
-	}
-	to {
-		transform: translate(400px, 200px)
 	}
 }
 
@@ -451,20 +454,6 @@ textarea {
 	}
 }
 
-.blob5 {
-	left: 40%;
-	top: 40%;
-	animation: blob5 50s linear infinite alternate;
-}
-
-@keyframes blob5 {
-	from {
-		transform: translate(0,0)
-	}
-	to {
-		transform: translate(-400px, -300px)
-	}
-}
 
 .blob6 {
 	left: 40%;
@@ -508,36 +497,6 @@ textarea {
 	}
 	to {
 		transform: translate(-600px, -50px)
-	}
-}
-
-.blob9 {
-	left: 50%;
-	top: 50%;
-	animation: blob9 50s ease-in infinite alternate;
-}
-
-@keyframes blob9 {
-	from {
-		transform: translate(0,0)
-	}
-	to {
-		transform: translate(1000px, -650px)
-	}
-}
-
-.blob10 {
-	right: 50%;
-	top: 50%;
-	animation: blob10 40s ease-in infinite alternate;
-}
-
-@keyframes blob10 {
-	from {
-		transform: translate(0,0)
-	}
-	to {
-		transform: translate(-1000px, -760px)
 	}
 }
 
@@ -1249,6 +1208,75 @@ textarea {
 	.button {
 		font-size: 1.8rem;
 	}
+
+.blob-container {
+	top: 0px;
+}
+
+
+.blob2 {
+	display: block;
+	right: 40%;
+	top: 30%;
+	animation: blob2 30s linear infinite alternate;
+}
+
+@keyframes blob2 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(400px, 200px)
+	}
+}
+
+.blob5 {
+	display: block;
+	left: 40%;
+	top: 40%;
+	animation: blob5 50s linear infinite alternate;
+}
+
+@keyframes blob5 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(-400px, -300px)
+	}
+}
+
+.blob9 {
+	display: block;
+	left: 50%;
+	top: 50%;
+	animation: blob9 50s ease-in infinite alternate;
+}
+
+@keyframes blob9 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(1000px, -650px)
+	}
+}
+
+.blob10 {
+	display: block;
+	right: 50%;
+	top: 50%;
+	animation: blob10 40s ease-in infinite alternate;
+}
+
+@keyframes blob10 {
+	from {
+		transform: translate(0,0)
+	}
+	to {
+		transform: translate(-1000px, -760px)
+	}
+}
 
 }
 
