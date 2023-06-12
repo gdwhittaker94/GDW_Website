@@ -1,11 +1,145 @@
-Why is this project important to you? What inspired it? Why did you choose to build this?
+# Questions to answer on project pages:
 
-What are the major features that make it unique? How does it compare to existing products like it?
+* Why is this project important to you? What inspired it? Why did you choose to build this?
 
-What did you start with? Was this built from scratch? Did you have a team? If so, which parts did you do? Where did the design come from? Was there any collaboration?
+* What are the major features that make it unique? How does it compare to existing products like it?
 
-What was the hardest part of building this product? Where did you get stuck along the way?
+* What did you start with? Was this built from scratch? Did you have a team? If so, which parts did you do? Where did the design come from? Was there any collaboration?
 
-When you did get stuck, how did you resolve it? How did you overcome the obstacles you faced?
+* What was the hardest part of building this product? Where did you get stuck along the way?
 
-What did you learn from doing this project? How has it affected the work you’ve done since then?
+* When you did get stuck, how did you resolve it? How did you overcome the obstacles you faced?
+
+* What did you learn from doing this project? How has it affected the work you’ve done since then?
+
+
+# Old Footer (Contact Form):
+
+## HTML
+
+        <form action="https://formsubmit.co/35c9cc69687db1e202295cefb6cddd63" method="POST" name="Contact Form" autocomplete="on" target="_blank">
+          <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name">
+              <span><img src="./img/icon/person.svg" alt="Person Profile Icon"></span> Full Name
+            </label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="email" name="email" required>
+            <label for="email">
+              <span><img src="./img/icon/envelope.svg" alt="Envelope Icon"></span>Email
+            </label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="number" name="number" required>
+            <label for="number">
+              <span><img src="./img/icon/telephone.svg" alt="Telephone Icon"></span>Number
+            </label>
+          </div>
+          <div class="input-group">
+            <textarea name="message" id="message" rows="8" required></textarea>
+            <label for="message">
+              <span><img src="./img/icon/chat-dots.svg" alt="Chat Bubble with 3 dots inside it Icon"></span>Message
+            </label>
+          </div>
+          <div class="footer__submit">
+            <button class="button button__submit">
+              Submit <span><img src="./img/icon/box-arrow-in-right.svg" alt="LinkedIn Icon"></span>
+            </button>
+          </div>
+        </form>
+
+
+
+## CSS
+
+
+.form {
+	font-family: var(--dm_sans);
+	text-align: center;
+}
+
+.input-group {
+	margin-bottom: 25px;
+	position: relative;
+}
+
+input,
+textarea {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%;
+	padding: 10px 5px;
+	font-size: 1.5rem;
+}
+
+label {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 10px 5px;
+	cursor: text;
+	font-size: 1.5rem;
+	color: var(--turquoise);
+	font-weight: 500;
+	transition: 200ms;
+}
+
+label > span {
+	margin-right: 3px;
+	margin-bottom: 3px;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+	top: -28px;
+	font-size: 1.3rem;
+}
+/* ¬ The hover effect only works if the input fields have the attribute 'required' applied to them, because otherwise they would be 'valid' just being empty and the label starts off above, instead of floating up on focus */
+
+/* ¬ Tilde selector = general sibling selector. Selects all elements (of x type, here 'label)) that come directly after another element (of Y type, here 'input' and 'textarea').  */
+
+input:focus-visible,
+textarea:focus-visible {
+	border: 2px solid var(--turquoise);
+	border-radius: 5px;
+}
+/* ¬ This selector allows us to get rid of, or simply style in another way, the blue ‘focus’ outline that appears around elements when we tab to them via the keyboard. NB: always use together with the :focus selector.  */
+
+.footer__submit {
+	text-align: center;
+}
+
+.button__submit {
+	margin-top: -10px;
+	margin-bottom: 10px;
+	border: 2px solid var(--turquoise);
+	background-color: white;
+	color: var(--turquoise);
+}
+
+textarea {
+	resize: vertical;
+	line-height: 2.2rem;
+}
+
+@media screen and (min-width:768px) {
+
+input, textarea, label {
+		font-size: 1.7rem;
+	}
+
+	input:focus ~ label,
+	input:valid ~ label,
+	textarea:focus ~ label,
+	textarea:valid ~ label {
+	font-size: 1.5rem;
+	}
+
+	.button {
+		font-size: 1.8rem;
+	}
+}

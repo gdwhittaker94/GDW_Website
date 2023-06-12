@@ -821,8 +821,6 @@ span {
 }
 /* Prevents issues when the parent creates a stacking context e.g. using the transform property)*/
 
-/* TODO: take screenshots of projects for cards */
-
 .card > * {
 	margin-bottom: 30px;
 }
@@ -865,7 +863,7 @@ span {
 .card__li {
 	border-radius: 3px;
 	padding: 10px;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	font-weight: 700;
 	background: white;
 	position: relative;
@@ -903,7 +901,7 @@ span {
 
 .about {
 	width: min(768px, 80%);
-	margin: 0 auto 70px;
+	margin: 0 auto 90px;
 	text-align: left;
 }
 
@@ -1016,76 +1014,21 @@ span {
 	bottom: -25px;
 }
 
-.form {
+.footer__email {
+	text-align: center;
 	font-family: var(--dm_sans);
-	text-align: center;
 }
 
-.input-group {
-	margin-bottom: 25px;
-	position: relative;
+.footer__email p, .footer__email a {
+	font-size: 1.6rem;
 }
 
-input,
-textarea {
-	border: 1px solid black;
-	border-radius: 5px;
-	width: 100%;
-	padding: 10px 5px;
-	font-size: 1.5rem;
+.footer__email a {
+	color: #1b6ae9;
 }
 
-label {
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	padding: 10px 5px;
-	cursor: text;
-	font-size: 1.5rem;
-	color: var(--turquoise);
-	font-weight: 500;
-	transition: 200ms;
-}
-
-label > span {
-	margin-right: 3px;
-	margin-bottom: 3px;
-}
-
-input:focus ~ label,
-input:valid ~ label,
-textarea:focus ~ label,
-textarea:valid ~ label {
-	top: -28px;
-	font-size: 1.3rem;
-}
-/* ¬ The hover effect only works if the input fields have the attribute 'required' applied to them, because otherwise they would be 'valid' just being empty and the label starts off above, instead of floating up on focus */
-
-/* ¬ Tilde selector = general sibling selector. Selects all elements (of x type, here 'label)) that come directly after another element (of Y type, here 'input' and 'textarea').  */
-
-input:focus-visible,
-textarea:focus-visible {
-	border: 2px solid var(--turquoise);
-	border-radius: 5px;
-}
-/* ¬ This selector allows us to get rid of, or simply style in another way, the blue ‘focus’ outline that appears around elements when we tab to them via the keyboard. NB: always use together with the :focus selector.  */
-
-.footer__submit {
-	text-align: center;
-}
-
-.button__submit {
-	margin-top: -10px;
-	margin-bottom: 10px;
-	border: 2px solid var(--turquoise);
-	background-color: white;
-	color: var(--turquoise);
-}
-
-textarea {
-	resize: vertical;
-	line-height: 2.2rem;
+lord-icon {
+	cursor: pointer;
 }
 
 .smallprint, .smallprint a {
@@ -1135,6 +1078,14 @@ textarea {
 		margin-bottom: 30px;
 	}
 
+	.techStack__title {
+		font-size: 3.3rem;
+	}
+
+	.blob-container {
+		top: 0px;
+	}
+
 	.projects__title {
 		font-size: 5rem;
 	}
@@ -1149,6 +1100,18 @@ textarea {
 
 	.card:hover {
 		transform: scale(1.01);
+	}
+
+	.card__header {
+		font-size: 3.4rem;
+	}
+
+	.card__text {
+		font-size: 1.6rem;
+	}
+
+	.card__li {
+		font-size: 1.4rem;
 	}
 
 	.about__title {
@@ -1194,93 +1157,74 @@ textarea {
 		width: 280px;
 	}
 
-	input, textarea, label {
-		font-size: 1.7rem;
-	}
-
-	input:focus ~ label,
-	input:valid ~ label,
-	textarea:focus ~ label,
-	textarea:valid ~ label {
-	font-size: 1.5rem;
-	}
-
-	.button {
+	.footer__email p, .footer__email a {
 		font-size: 1.8rem;
 	}
 
-.blob-container {
-	top: 0px;
-}
-
-
-.blob2 {
-	display: block;
-	right: 40%;
-	top: 30%;
-	animation: blob2 30s linear infinite alternate;
-}
-
-@keyframes blob2 {
-	from {
-		transform: translate(0,0)
+	.blob2 {
+		display: block;
+		right: 40%;
+		top: 30%;
+		animation: blob2 30s linear infinite alternate;
 	}
-	to {
-		transform: translate(400px, 200px)
-	}
-}
 
-.blob5 {
-	display: block;
-	left: 40%;
-	top: 40%;
-	animation: blob5 50s linear infinite alternate;
-}
-
-@keyframes blob5 {
-	from {
-		transform: translate(0,0)
+	@keyframes blob2 {
+		from {
+			transform: translate(0,0)
+		}
+		to {
+			transform: translate(400px, 200px)
+		}
 	}
-	to {
-		transform: translate(-400px, -300px)
-	}
-}
 
-.blob9 {
-	display: block;
-	left: 50%;
-	top: 50%;
-	animation: blob9 50s ease-in infinite alternate;
-}
-
-@keyframes blob9 {
-	from {
-		transform: translate(0,0)
+	.blob5 {
+		display: block;
+		left: 40%;
+		top: 40%;
+		animation: blob5 50s linear infinite alternate;
 	}
-	to {
-		transform: translate(1000px, -650px)
-	}
-}
 
-.blob10 {
-	display: block;
-	right: 50%;
-	top: 50%;
-	animation: blob10 40s ease-in infinite alternate;
-}
-
-@keyframes blob10 {
-	from {
-		transform: translate(0,0)
+	@keyframes blob5 {
+		from {
+			transform: translate(0,0)
+		}
+		to {
+			transform: translate(-400px, -300px)
+		}
 	}
-	to {
-		transform: translate(-1000px, -760px)
+
+	.blob9 {
+		display: block;
+		left: 50%;
+		top: 50%;
+		animation: blob9 50s ease-in infinite alternate;
+	}
+
+	@keyframes blob9 {
+		from {
+			transform: translate(0,0)
+		}
+		to {
+			transform: translate(1000px, -650px)
+		}
+	}
+
+	.blob10 {
+		display: block;
+		right: 50%;
+		top: 50%;
+		animation: blob10 40s ease-in infinite alternate;
+	}
+
+	@keyframes blob10 {
+		from {
+			transform: translate(0,0)
+		}
+		to {
+			transform: translate(-1000px, -760px)
+		}
 	}
 }
-
-}
-
-
 
 
 /* *LIGHT/DARK MODE MEDIA QUERY */
