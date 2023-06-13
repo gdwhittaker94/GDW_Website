@@ -557,7 +557,9 @@ body {
 
 .hero__title {
 	font-size: 5rem;
-	margin-bottom: 0;
+	margin-bottom: 10px;
+	/* font-family: var(--dm_serif); */
+
 }
 
 .hero__title span {
@@ -576,6 +578,30 @@ body {
 	max-width: 75%;
 	margin: 0 auto;
 	margin-bottom: 50px;
+}
+
+.animate {
+	animation-duration: 1000ms;
+	animation-name: animate-fade;
+	animation-delay: 300ms;
+	animation-fill-mode: backwards;
+}
+
+.animate2 {
+	animation-delay: 1300ms;
+}
+
+.animate3 {
+	animation-delay: 2000ms;
+}
+
+.animate4 {
+	animation-delay: 2000ms;
+}
+
+@keyframes animate-fade {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .hero__img {
