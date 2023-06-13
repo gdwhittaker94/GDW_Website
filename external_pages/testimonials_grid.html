@@ -13,8 +13,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
-    <title>Testimonials Grid | Guy David Whittaker</title>
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <title>Testimonials Grid | Guy David Whittaker </title>
   </head>
   <body>
 
@@ -24,121 +24,117 @@
       </a>
     </div>
 
-    <main class="container container--white">
-      <div class="container__title">
+    <main class="page-container page-container--white">
+      <h1 class="main-title">
         Testimonials Grid
-      </div>
-      <div class="container__text">
-        <!-- *SUMMARY SECTION -->
-        <h2 class="container__subtitle container__subtitle--noline">
-          Summary
-        </h2>
-        <p>
-          This project comes from <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank"> frontendmentor.io</a> which has lots of project challenges for frontend developers to choose from in order to practice their skills.
-        </p>
-        <p>
-          The aim of the project was to replicate a testimonials grid layout as specified in the page's project brief and provided design documents. I used this project to practice both my flexbox and grid skills, building the same testimonials grid twice to practice each layout type and compare the differences. Overall this was an enjoyable practice project and I am happy with the end result.
-        </p>
-        <!-- *SUMMARY VISUALS -->
-        <ul class="container__summary-list">
-          <li class="container__summary-li" >
-            HTML5
-          </li>
-          <li class="container__summary-li">
-            CSS
-          </li>
-          <li class="container__summary-li">
-            Flexbox
-          </li>
-          <li class="container__summary-li">
-            Grid
-          </li>
-        </ul>
-        <div class="summary__buttons">
-          <a href="https://gdwhittaker94.github.io/testimonials_grid/" target="_blank">
-            <button class="button button__discover">View Live Project <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
-          </a>
-          <a href="https://github.com/gdwhittaker94/testimonials_grid" target="_blank">
-            <button class="button button__sourceCode">View Source Code <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
-          </a>
-        </div>
-      </div>
-
-      <!-- *IMAGE PREVIEWS -->
-
-      <div class="container__images">
-        <p>Flexbox Version</p>
-        <img src="../img/project_screenshots/testimonials_flexbox.png" alt="A screenshot of the flexbox version of the testimonial grid page">
-        <p>Grid Version</p>
-        <img src="../img/project_screenshots/testimonials_grid.png" alt="A screenshot of the grid version of the testimonial grid page">
-      </div>
-
-
-      <!-- *BUILDING THE PROJECT SECTION -->
-      <div class="container__info">
-        <div class="container__top">
-          <h2 class="container__subtitle container__subtitle--long">
-            Building the project <span>🛠️</span>
-          </h2>
-          <p>
-            I found flexbox and grid to be quite confusing topics when I first started studying them. It wasn't until I started building lots of things using these layout structures that I fully grasped how they work and their unique intricacies. So when I saw this project I thought it would be a perfect opportunity to further my Flexbox and Grid skills.
-          </p>
-          <p>
-            I started with the mobile designs first as I had learned this is best practice, and which for both layouts was fairly easy. For the flex layout I just put the cards within one general wrapping container and then applied margin between each testimonial card. For the grid I turned the main wrapping container into a grid, applied a gap value and the same look was achieved. The internal part of the cards was done using flexbox and having three different containers which flowed in a column direction, followed by individual tweaking of each container in order to get the desired appearance (including several smaller flexboxes for the top section).
-          </p>
-          <div class="container__images">
-            <p>Mobile Version</p>
-            <img src="../img/project_screenshots/testimonials_mobile.png" alt="The mobile version of the testimonials grid website" class="container__images--horizontal">
-          </div>
-          <p>
-            The tablet/desktop version is where things got slightly more complicated. In order to create the unique testimonials grid layout with flexbox I first sketched it out on paper and then began dividing the sketch into different segments. This left me knowing that I needed to create a left and right container, and within the left container to create a top and bottom container. Then, in order to get the right sizings for each card I then played around with the flex-basis property on each one instead of using traditional length values (px, % etc) - a property I hadn't really used before. This helped me appreciate, as odd as it may sound, that 100% really means 100% of the available space! This is because I discoverd that if the combined card size and gap size totalled more than 100%, elements overflow their container - not good!
-          </p>
-          <p>
-            I found creating the testimonials grid with CSS Grid much simpler and easier to do. I could have made the grid via 2 different methods:
-          </p>
-          <p class="container__top--inset">
-            1) To have used the grid-template-columns property to have made a grid with 4 equally sized columns, and then to have done some individual adjustments to the card sizings within the grid using the 'span' value or the grid-column and grid-row shorthand properties.
-          </p>
-          <p class="container__top--inset">
-            2) To use the grid-template-areas property to visually describe how much area each card should occupy within the described grid layout.
-          </p>
-          <p>
-            I decided to opt for the latter option. Not only because it seemed easier to me, but because I had seen many people online recommended this method and I wanted to get some practice with it. Indeed creating the testimonials grid this way was fairly easy and better yet required very little CSS code overall.
-          </p>
-          <div class="container__images">
-            <p>Grid Layout Code</p>
-            <img src="../img/project_screenshots/testimonials_code.png" alt="A screenshot of the CSS code required to create the grid version of the testimonials grid" class="container__images--horizontal">
-          </div>
-          <h2 class="container__subtitle container__subtitle--long">
-            Project Reflection <span>🤔</span>
-          </h2>
-          <p>
-            This project gave me a good general sense of each CSS layout model and how the different properties which each one brings can be best utilised in order to create a design like this one.
-          </p>
-          <p>
-            I ultimately found that, at least for a design like this, that CSS Grid was undeniably quicker and easier to use than CSS Flexbox. Flexbox required a lot more control and layering in ordered to get the desired result, whereas with Grid the testimonial grid layout could be achieved with just one property and a couple of values. However, one drawback of this method I found is that there is less precise control of the size of the cards. As a result, the Grid Version looks slightly less like the original design than the Flexbox one, whose cards sizes I could control precisely using flex-basis.
-          </p>
-          <p>
-            Lastly, have you ever seen an episode of "The Joy of Painting with Bob Ross"? It really is something to watch how Ross turns a blank canvas into a beautiful piece of art in such a short period of time. What's more, for about 50-70% of the episode the painting still doesn't really look like anything special,  just a couple of general background layers and shapes - layers which Ross stresses are not to be undervalued! As the episode comes to an end, suddenly, before our eyes, a beautiful piece of art appears as if from nowhere! It's great to watch.
-          </p>
-          <p>
-            Well, I realised that Bob Ross paintings and building webpages are not too dissimilar. Just like Ross, it's important to establish the webpage's foundations: the base containers and divs which will contain the rest of the page's content and will have the necessary margin and padding to keep everything nicely spaced apart. Just like a Bob Ross painting, this is actually the majority of the work and vital for the end result of the webpage, but it doesn't really look anything special yet. Then we add all the eye-grabbing content: the nice touches, the flairs, the things which you mainly notice when you look at a webpage. It's only at this point, more or less in the last 33% of the project, just like with one of Ross's paintings, that our webpage comes to life and is something you look at with interest.
-          </p>
-          <p>
-            So if Bob Ross makes those paintings on canvas and is called an artist, and frontend developers make webpages on web browsers in a similar fashion, aren't frontend developers also artists? I'll leave that one up to you!
-          </p>
-          <div style="width:100%;height:0;padding-bottom:62%;position:relative;">
-            <iframe src="https://giphy.com/embed/n5vlIXw4XBgGc" width="100%" height="100%" style="position:absolute; border-radius: 10px;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-          </div>
-          <p style="text-align: center;">
-            <a href="https://giphy.com/gifs/pbs-n5vlIXw4XBgGc">via GIPHY</a>
-          </p>
-        <a href="#home" class="button--totop">
-          <button>
-            Back to top ⏫
-          </button>
+        <span class="main-title__underline"></span>
+      </h1>
+      <!-- *SUMMARY SECTION -->
+      <h2 class="subtitle">
+        Summary
+        <span class="subtitle__underline subtitle__underline--summary"></span>
+      </h2>
+      <p class="paragraph">
+        This project comes from <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank"> frontendmentor.io</a> which has lots of project challenges for frontend developers to choose from in order to practice their skills.
+      </p>
+      <p class="paragraph">
+        The aim of the project was to replicate a testimonials grid layout as specified in the page's project brief and provided design documents. I used this project to practice both my flexbox and grid skills, building the same testimonials grid twice to practice each layout type and compare the differences. Overall this was an enjoyable practice project and I am happy with the end result.
+      </p>
+      <ul class="tech-list">
+        <li class="tech-list__item">
+          HTML5
+        </li>
+        <li class="tech-list__item">
+          CSS
+        </li>
+        <li class="tech-list__item">
+          Flexbox
+        </li>
+        <li class="tech-list__item">
+          Grid
+        </li>
+      </ul>
+      <div class="buttons">
+        <a href="https://gdwhittaker94.github.io/testimonials_grid/" target="_blank">
+          <button class="button button__discover">View Live Project <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+        </a>
+        <a href="https://github.com/gdwhittaker94/testimonials_grid" target="_blank">
+          <button class="button button__sourceCode">View Source Code <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
         </a>
       </div>
+      <div class="image-container image-container--extraMargin">
+        <p class="image-container__text">Flexbox Version</p>
+        <img src="../img/project_screenshots/testimonials_flexbox.png" alt="A screenshot of the flexbox version of the testimonial grid page" class="image-container__img">
+
+        <p class="image-container__text">Grid Version</p>
+        <img src="../img/project_screenshots/testimonials_grid.png" alt="A screenshot of the grid version of the testimonial grid page" class="image-container__img">
+      </div>
+
+      <!-- *BUILDING THE PROJECT SECTION -->
+      <h2 class="subtitle">
+        Building the project <span>🛠️</span>
+        <span class="subtitle__underline subtitle__underline--🛠️"></span>
+      </h2>
+      <p class="paragraph">
+        I found flexbox and grid to be quite confusing topics when I first started studying them. It wasn't until I started building lots of things using these layout structures that I fully grasped how they work and their unique intricacies. So when I saw this project I thought it would be a perfect opportunity to further my Flexbox and Grid skills.
+      </p>
+      <p class="paragraph">
+        I started with the mobile designs first as I had learned this is best practice, and which for both layouts was fairly easy. For the flex layout I just put the cards within one general wrapping container and then applied margin between each testimonial card. For the grid I turned the main wrapping container into a grid, applied a gap value and the same look was achieved. The internal part of the cards was done using flexbox and having three different containers which flowed in a column direction, followed by individual tweaking of each container in order to get the desired appearance (including several smaller flexboxes for the top section).
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">Mobile Version</p>
+        <img src="../img/project_screenshots/testimonials_mobile.png" alt="The mobile version of the testimonials grid website" class="image-container__img image-container__img--vertical">
+      </div>
+      <p class="paragraph">
+        The tablet/desktop version is where things got slightly more complicated. In order to create the unique testimonials grid layout with flexbox I first sketched it out on paper and then began dividing the sketch into different segments. This left me knowing that I needed to create a left and right container, and within the left container to create a top and bottom container. Then, in order to get the right sizings for each card I then played around with the flex-basis property on each one instead of using traditional length values (px, % etc) - a property I hadn't really used before. This helped me appreciate, as odd as it may sound, that 100% really means 100% of the available space! This is because I discoverd that if the combined card size and gap size totalled more than 100%, elements overflow their container - not good!
+      </p>
+      <p class="paragraph">
+        I found creating the testimonials grid with CSS Grid much simpler and easier to do. I could have made the grid via 2 different methods:
+      </p>
+      <p class="paragraph paragraph--indent">
+        1) To have used the grid-template-columns property to have made a grid with 4 equally sized columns, and then to have done some individual adjustments to the card sizings within the grid using the 'span' value or the grid-column and grid-row shorthand properties.
+      </p>
+      <p class="paragraph paragraph--indent">
+        2) To use the grid-template-areas property to visually describe how much area each card should occupy within the described grid layout.
+      </p>
+      <p class="paragraph">
+        I decided to opt for the latter option. Not only because it seemed easier to me, but because I had seen many people online recommended this method and I wanted to get some practice with it. Indeed creating the testimonials grid this way was fairly easy and better yet required very little CSS code overall.
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">Grid Layout Code</p>
+        <img src="../img/project_screenshots/testimonials_code.png" alt="A screenshot of the CSS code required to create the grid version of the testimonials grid" class="image-container__img image-container__img--vertical">
+      </div>
+      <h2 class="subtitle">
+        Project Reflection <span>🤔</span>
+        <span class="subtitle__underline subtitle__underline--🤔"></span>
+      </h2>
+      <p class="paragraph">
+        This project gave me a good general sense of each CSS layout model and how the different properties which each one brings can be best utilised in order to create a design like this one.
+      </p>
+      <p class="paragraph">
+        I ultimately found that, at least for a design like this, that CSS Grid was undeniably quicker and easier to use than CSS Flexbox. Flexbox required a lot more control and layering in ordered to get the desired result, whereas with Grid the testimonial grid layout could be achieved with just one property and a couple of values. However, one drawback of this method I found is that there is less precise control of the size of the cards. As a result, the Grid Version looks slightly less like the original design than the Flexbox one, whose cards sizes I could control precisely using flex-basis.
+      </p>
+      <div style="height:0;padding-bottom:62%;position:relative;margin-bottom:5px;">
+        <iframe src="https://giphy.com/embed/n5vlIXw4XBgGc" width="100%" height="100%" style="position:absolute; border-radius: 10px;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <p style="text-align: center; margin-bottom: 30px;">
+        <a href="https://giphy.com/gifs/pbs-n5vlIXw4XBgGc">via GIPHY</a>
+      </p>
+      <p class="paragraph">
+        Lastly, have you ever seen an episode of "The Joy of Painting with Bob Ross" (see above)? It's amazing to watch how Ross turns a blank canvas into a beautiful piece of art in such a short period of time. For about 50-70% of the episode the painting still doesn't really look like anything special, just a couple of general color layers and shapes. However, as the episode comes to an end, suddenly, before our eyes, a beautiful piece of art appears as if from nowhere! It's great to watch.
+      <p class="paragraph">
+        I realised that Bob Ross paintings and building webpages are not too dissimilar. When we start, we both focus on the foundations of our work: for Ross the background layers and shapes, for us the containing divs and wrappers which will hold and space out all our content. Then, we go on adding content but for most of the time it still doesn't look like anything special. Then, towards the end of all our effort we add the eye-grabbing content and finer details and then suddenly, almost without warning, our webpage comes to life and looks how you originally imagined it in your head! For me it's as much fun as it making a painting must be for Ross.
+      </p>
+      <div class="return-buttons">
+      <a href="#home" >
+        <button class="return-buttons__totop">
+          Back to top ⏫
+        </button>
+      </a>
+      <p class="return-buttons__text">or</p>
+      <a href="../index.html">
+        <span class="nav__logo nav__logo--border">GDW</span>
+      </a>
     </main>
 
   </body>
