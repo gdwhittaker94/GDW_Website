@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./external_pages.css" hreflang="en" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <title>Página de evento de WWF  | Guy David Whittaker </title>
+  </head>
+  <body>
+
+    <div id="home">
+      <a href="../indice.html">
+        <span class="nav__logo"><span class="nav__backArrow">&#8629;</span> GDW</span>
+      </a>
+    </div>
+
+    <main class="page-container page-container--white">
+      <h1 class="main-title">
+        Página de evento de WWF
+        <span class="main-title__underline main-title__underline--ES"></span>
+      </h1>
+      <!-- *SUMMARY SECTION -->
+      <h2 class="subtitle">
+        Resumen
+        <span class="subtitle__underline subtitle__underline--summary"></span>
+      </h2>
+      <p class="paragraph">
+        Un amigo que actualmente vive en Australia y está cursando una Master relacionada con la programaciónme me sugerió este proyecto de su curso. Me lo envió como una forma de practicar y poner a prueba mis habilidades actuales como desarrollador frontend, tal como lo hizo a él.
+      </p>
+      <p class="paragraph">
+        El objetivo del proyecto era imitar una página web real de una organización sin fines de lucro que promociona un evento benéfico, además de cumplir con algunos requisitos adicionales establecidos por el profesor del curso que estaban diseñados para probar ciertas habilidades. Para no complicar demasiado las cosas, construí la misma <a href="https://support.worldwildlife.org/site/SPageServer/?NONCE_TOKEN=4766A0DB3CE84C0025981400E9A751D0&pagename=panda_nation_chicago_marathon" target="_blank">página web del evento de WWF</a> que mi amigo hizo, que promociona y detalla la participación de WWF en el maratón de Chicago 2023.
+      </p>
+      <p class="paragraph">
+        Para este proyecto, imaginé que la organización WWF me había pedido personalmente que construyera esta página web para ellos. Utilicé el resumen del proyecto como guía y el sitio web en vivo como plantilla de diseño, y luego construí todo desde cero. Estoy muy satisfecho con el resultado final y su similitud con el diseño original, y de hecho creo que los elementos adicionales establecidos por los requisitos agregan un toque agradable a la página, aunque a veces esto significaba desviarse del diseño original.
+      </p>
+      <ul class="tech-list">
+        <li class="tech-list__item">
+          HTML5
+        </li>
+        <li class="tech-list__item">
+          CSS
+        </li>
+        <li class="tech-list__item">
+          Diseño Web Reactivo
+        </li>
+        <li class="tech-list__item">
+          Javascript (ES6+)
+        </li>
+      </ul>
+      <div class="buttons">
+        <a href="https://gdwhittaker94.github.io/WWF_Event_Page/" target="_blank">
+          <button class="button button__discover">Ver proyecto en vivo <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+        </a>
+        <a href="https://github.com/gdwhittaker94/WWF_Event_Page" target="_blank">
+          <button class="button button__sourceCode">Vver el código fuente <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+        </a>
+      </div>
+      <div class="image-container image-container--extraMargin">
+        <p class="image-container__text">Mi Diseño</p>
+        <img src="../img/project_screenshots/wwf_eventpage1.png" alt="A screenshot of the main area of Whittaker's WWF Event Page" class="image-container__img">
+
+        <p class="image-container__text">El diseño original</p>
+        <img src="../img/project_screenshots/wwf_eventpage_original.png" alt="A screenshot of the main area of the original WWF Event Page" class="image-container__img">
+      </div>
+
+      <!-- *BUILDING THE PROJECT SECTION -->
+      <h2 class="subtitle">
+        Construir el proyecto <span>🛠️</span>
+        <span class="subtitle__underline subtitle__underline--🛠️"></span>
+      </h2>
+      <p class="paragraph">
+        En mi experiencia, el área de navegación o encabezado es una de las partes más complicadas de construir en una página, y este proyecto no fue diferente. Aquí hay una gran cantidad de elementos que viven juntos, lo que significa que hay muchas partes móviles para redimensionar y reorganizar en diferentes tamaños de pantalla. En el diseño original, hay un diseño para pantallas más pequeñas y otro para pantallas más grandes. Para imitar esto, construí dos áreas de navegación separadas en el documento HTML de esta página, activando o desactivando la correspondiente según el tamaño de pantalla mediante consultas de medios (media queries).
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">Area de la navigación reactiva</p>
+        <img src="../img/project_screenshots/wwf_eventpageGIF1.gif" alt="A GIF showing the changing webpage layout at different screen sizes" class="image-container__img">
+      </div>
+      <p class="paragraph">
+        Una de las requisitos del proyecto era tener al menos 6 imágenes mostradas en la página web. El sitio web original no tiene 6 imágenes mostradas, así que decidí que la mejor manera de incluir 6 imágenes sin arruinar demasiado el diseño original sería incluir un carrusel de imágenes (slider). Al mismo tiempo, podría aprovechar el espacio adicional en mi página web proporcionado por las áreas de las imágenes para incluir información clave de la carrera, algo que pensé que un cliente real podría apreciar.
+      </p>
+      <p class="paragraph">
+        Este requisito mínimo de imágenes también estaba presente en <a href="./sitio_web_mini_wwf.html" target="_blank">otro proyecto</a> en el que también utilicé un carrusel de imágenes. Podría haberlo copiado y reutilizado, sin embargo, quería mejorar el diseño anterior y practicar más con Javascript, así que encontré <a href="https://www.youtube.com/watch?v=rTB-UNl_B_Y&list=PLQLXmxvCrf2npA-3g7A-SxLHmN1E89C3r&index=8" target="_blank">este útil tutorial de video</a> que me ayudó a construir un slider de imágenes que también incluye puntos clicables en la parte inferior de la imagen.
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">Carrusel de imágenes</p>
+        <img src="../img/project_screenshots/wwf_eventpageGIF2.gif" alt="A GIF showing the image carousel at work" class="image-container__img">
+      </div>
+      <p class="paragraph">
+        Una vez que había construido la mitad superior de la página web, la mitad inferior no fue demasiado difícil. Mantuve casi todo el contenido dentro de un contenedor para que no se extendiera demasiado y se viera feo. Además, añadí un video de Youtube y un enlace de Google Maps, que nuevamente eran requisitos del proyecto y que diferían del diseño original, pero creo que funcionan muy bien. Puedo ver fácilmente que el sitio web real incluya dicho contenido para ayudar a sus usuarios a obtener más información sobre el evento. Por último, y para mi sorpresa, encontré que la incorporación de estas dos cosas fue muy fácil gracias a las funciones de incorporación integradas en los videos de Youtube y en Google Maps.
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">La parte inferior de la página</p>
+        <img src="../img/project_screenshots/wwf_eventpage4.png" alt="A screenshot of the part of the WWF Event Page which includes a Google maps embedded link and some text." class="image-container__img">
+      </div>
+      <h2 class="subtitle">
+        Reflexión sobre el proyecto <span>🤔</span>
+        <span class="subtitle__underline subtitle__underline--🤔ES"></span>
+      </h2>
+      <p class="paragraph">
+        Este proyecto fue un gran impulso para mi confianza en mis habilidades de diseño de páginas web, CSS y diseño web responsivo. ¡Construí una página web que se parece mucho a un sitio web profesional desde cero y por mí mismo! Este proyecto me ha dado la creencia de que realmente puedo crear sitios web hermosos, funcionales y receptivos, lo cual solo me ha motivado a hacer más y mejorar.
+      </p>
+      <p class="paragraph">
+        Sin embargo, todavía hay mucho por mejorar, y uno de esos aspectos es Javascript. Para crear el carrusel de imágenes, el contador de cuenta regresiva y el menú desplegable, necesité ayuda de tutoriales o sitios web, lo cual es frustrante. Me gustaría alcanzar un nivel lo suficientemente bueno como para poder construir la mayoría de estas cosas por mí mismo, con solo un poco de ayuda y corrección de otros. Sin embargo, ver lo que se puede hacer con Javascript es emocionante y me motiva aún más a seguir adelante y aprender más.
+      </p>
+      <p class="paragraph">
+        Por último, al igual que en mi <a href="./sitio_web_mini_wwf.html" target="_blank">otro proyecto relacionado con WWF</a>, me pareció extraño el requisito de este proyecto de usar consultas multimedia HTML dentro de la etiqueta &#60;head&#62;, especialmente porque todo mi aprendizaje en línea indicaba que la forma estándar de la industria de usar consultas multimedia es dentro de un archivo CSS. Aunque fue bueno practicar este otro método de crear sitios web receptivos, descubrí rápidamente que no me gustaba porque requería varios archivos CSS individuales. Esto resultó en una gran duplicación de código, muchas adiciones y eliminaciones manuales de código CSS, y a menudo me dejaba confundido al tratar de manejar mucho código similar en tres documentos diferentes.
+      </p>
+      <div class="return-buttons">
+      <a href="#home" >
+        <button class="return-buttons__totop">
+          Volver al Inicio ⏫
+        </button>
+      </a>
+      <p class="return-buttons__text">o</p>
+      <a href="../indice.html">
+        <span class="nav__logo nav__logo--border">GDW</span>
+      </a>
+    </main>
+
+  </body>
+</html>

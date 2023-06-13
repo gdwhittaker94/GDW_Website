@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./external_pages.css" hreflang="en" type="text/css" media="screen"/>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <title>Testimonios con Flexbox y Grid | Guy David Whittaker </title>
+  </head>
+  <body>
+
+    <div id="home">
+      <a href="../indice.html">
+        <span class="nav__logo"><span class="nav__backArrow">&#8629;</span> GDW</span>
+      </a>
+    </div>
+
+    <main class="page-container page-container--white">
+      <h1 class="main-title">
+        Testimonios con Flexbox y Grid
+        <span class="main-title__underline main-title__underline--ES3"></span>
+      </h1>
+      <!-- *SUMMARY SECTION -->
+      <h2 class="subtitle">
+        Resumen
+        <span class="subtitle__underline subtitle__underline--summary"></span>
+      </h2>
+      <p class="paragraph">
+        Este proyecto proviene de <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7" target="_blank">frontendmentor.io</a>, que ofrece una gran cantidad de desafíos que los desarrolladores frontend pueden elegir y utilizar para practicar sus habilidades.
+      </p>
+      <p class="paragraph">
+        El objetivo del proyecto era replicar un diseño de cuadrícula de testimonios según lo especificado en el resumen del proyecto y los documentos de diseño proporcionados. Utilicé este proyecto para practicar tanto mis habilidades de flexbox como de grid, construyendo la misma cuadrícula de testimonios dos veces para practicar cada tipo de diseño y comparar las diferencias. En general, este fue un proyecto de práctica agradable y estoy satisfecho con el resultado final.
+      </p>
+      <ul class="tech-list">
+        <li class="tech-list__item">
+          HTML5
+        </li>
+        <li class="tech-list__item">
+          CSS
+        </li>
+        <li class="tech-list__item">
+          Flexbox
+        </li>
+        <li class="tech-list__item">
+          Grid
+        </li>
+      </ul>
+      <div class="buttons">
+        <a href="https://gdwhittaker94.github.io/testimonials_grid/" target="_blank">
+          <button class="button button__discover">Ver pryecto en vivo <span><img src="../img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
+        </a>
+        <a href="https://github.com/gdwhittaker94/testimonials_grid" target="_blank">
+          <button class="button button__sourceCode">Ver el código fuente <span><img src="../img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
+        </a>
+      </div>
+      <div class="image-container image-container--extraMargin">
+        <p class="image-container__text">Versión de Flexbox</p>
+        <img src="../img/project_screenshots/testimonials_flexbox.png" alt="A screenshot of the flexbox version of the testimonial grid page" class="image-container__img">
+
+        <p class="image-container__text">Versión de Grid</p>
+        <img src="../img/project_screenshots/testimonials_grid.png" alt="A screenshot of the grid version of the testimonial grid page" class="image-container__img">
+      </div>
+
+      <!-- *BUILDING THE PROJECT SECTION -->
+      <h2 class="subtitle">
+        Construir el proyecto <span>🛠️</span>
+        <span class="subtitle__underline subtitle__underline--🛠️"></span>
+      </h2>
+      <p class="paragraph">
+        Al principio, encontré que flexbox y grid eran temas bastante confusos cuando comencé a estudiarlos. No fue hasta que empecé a construir muchas cosas utilizando estas estructuras de diseño que realmente comprendí cómo funcionan y sus intricaciones únicas. Así que cuando vi este proyecto, pensé que sería una oportunidad perfecta para mejorar mis habilidades con Flexbox y Grid.
+      </p>
+      <p class="paragraph">
+        Comencé con los diseños para dispositivos móviles primero, ya que aprendí por mis estudios que es la mejor práctica, y fue bastante fácil para ambos tipos de diseño. Para el diseño con flexbox, simplemente coloqué las tarjetas de testimonios dentro de un contenedor general y luego apliqué un margen entre cada tarjeta de testimonio. Para el diseño con grid, convertí el contenedor principal en una cuadrícula, apliqué un valor de la properiedad 'gap' y se logró el mismo aspecto. La parte interna de las tarjetas se realizó utilizando flexbox y se crearon tres contenedores diferentes que fluían en dirección de columna, seguidos de ajustes individuales en cada contenedor para obtener la apariencia deseada (incluyendo varios flexbox más pequeños para la sección superior).
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">Versión de móvil</p>
+        <img src="../img/project_screenshots/testimonials_mobile.png" alt="The mobile version of the testimonials grid website" class="image-container__img image-container__img--vertical">
+      </div>
+      <p class="paragraph">
+        La versión para tabletas/escritorio es donde las cosas se volvieron un poco más complicadas. Para crear el diseño único de la rejilla de testimonios con flexbox, primero lo dibujé en papel y luego comencé a dividir el dibujo en diferentes segmentos. Por consiguiente supe que necesitaba crear un contenedor izquierdo y derecho, y dentro del contenedor izquierdo crear un contenedor superior e inferior. Luego, para obtener los tamaños correctos para cada tarjeta, jugué con la propiedad flex-basis en cada una en lugar de usar valores de longitud tradicionales (px, %, etc.), una propiedad que no había usado mucho antes. ¡Esto me ayudó a apreciar, por extraño que parezca, que el 100% realmente significa el 100% del espacio disponible! Esto se debe a que descubrí que si el tamaño combinado de la tarjeta y el espacio superaba el 100%, los elementos se desbordaban de su contenedor, ¡lo cual no es bueno!
+      </p>
+      <p class="paragraph">
+        Encontré que crear la rejilla de testimonios con CSS Grid era mucho más simple y fácil de hacer. Podría haber creado la rejilla de dos formas diferentes:
+          </p>
+      </p>
+      <p class="paragraph paragraph--indent">
+        1) Usando la propiedad grid-template-columns para crear una rejilla con 4 columnas de tamaño igual y luego hacer ajustes individuales en los tamaños de las tarjetas dentro de la rejilla utilizando el valor 'span' o las propiedades abreviadas grid-column y grid-row.
+      </p>
+      <p class="paragraph paragraph--indent">
+        2) Usando la propiedad grid-template-areas para describir visualmente cuánto espacio debe ocupar cada tarjeta dentro del diseño de rejilla descrito.
+      </p>
+      <p class="paragraph">
+        Opté por la segunda opción. No solo porque me pareció más fácil, sino porque había visto que muchas personas en línea recomendaban este método y quería practicar con él. De hecho, crear la rejilla de testimonios de esta manera fue bastante fácil y, lo mejor de todo, requería muy poco código CSS en general.
+      </p>
+      <div class="image-container">
+        <p class="image-container__text">Código del diseño con Grid</p>
+        <img src="../img/project_screenshots/testimonials_code.png" alt="A screenshot of the CSS code required to create the grid version of the testimonials grid" class="image-container__img image-container__img--vertical">
+      </div>
+      <h2 class="subtitle">
+        Reflexión sobre el proyecto <span>🤔</span>
+        <span class="subtitle__underline subtitle__underline--🤔ES"></span>
+      </h2>
+      <p class="paragraph">
+        Este proyecto me dio una buena comprensión general de cada modelo de diseño CSS y cómo se pueden utilizar mejor las diferentes propiedades de cada uno para crear un diseño como este.
+      </p>
+      <p class="paragraph">
+        En última instancia, encontré que, al menos para un diseño como este, CSS Grid era innegablemente más rápido y más fácil de usar que CSS Flexbox. Flexbox requería mucho más control y superposición para obtener el resultado deseado, mientras que con Grid, el diseño de rejilla de testimonios se podía lograr con solo una propiedad y un par de valores. Sin embargo, una desventaja de este método que encontré es que hay menos control preciso del tamaño de las tarjetas. Como resultado, la versión de Grid se ve ligeramente menos parecida al diseño original que la versión de Flexbox, cuyos tamaños de tarjeta pude controlar con precisión utilizando flex-basis.
+      </p>
+      <div style="height:0;padding-bottom:62%;position:relative;margin-bottom:5px;">
+        <iframe src="https://giphy.com/embed/n5vlIXw4XBgGc" width="100%" height="100%" style="position:absolute; border-radius: 10px;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <p style="text-align: center; margin-bottom: 30px;">
+        <a href="https://giphy.com/gifs/pbs-n5vlIXw4XBgGc">via GIPHY</a>
+      </p>
+      <p class="paragraph">
+        Por último, ¿alguna vez has visto un episodio de "The Joy of Painting with Bob Ross" (ver arriba)? Es increíble ver cómo Ross convierte un lienzo en blanco en una hermosa obra de arte en tan poco tiempo. Durante aproximadamente el 50-70% del episodio, la pintura aún no parece algo especial, solo unas capas generales de color y formas. Sin embargo, a medida que el episodio llega a su fin, de repente, ante nuestros ojos, aparece una hermosa obra de arte como si surgiera de la nada. Es maravilloso de ver.
+    </p>
+    <p class="paragraph">
+        Me di cuenta de que las pinturas de Bob Ross y la construcción de páginas web no son tan diferentes. Cuando comenzamos, ambos nos centramos en los cimientos de nuestro trabajo: para Ross, las capas de fondo y las formas, para nosotros, los contenedores y envoltorios que mantendrán y espaciarán todo nuestro contenido. Luego, vamos agregando contenido, pero la mayor parte del tiempo aún no parece algo especial. Luego, hacia el final de todo nuestro esfuerzo, agregamos el contenido llamativo y los detalles más finos y, de repente, casi sin previo aviso, ¡nuestra página web cobra vida y se ve como la imaginaste originalmente en tu mente! Para mí, es tan divertido como debe ser hacer una pintura para Ross.
+    </p>
+      <div class="return-buttons">
+      <a href="#home" >
+        <button class="return-buttons__totop">
+          Volver al Inicio ⏫
+        </button>
+      </a>
+      <p class="return-buttons__text">o</p>
+      <a href="../indice.html">
+        <span class="nav__logo nav__logo--border">GDW</span>
+      </a>
+    </main>
+
+  </body>
+</html>
