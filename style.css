@@ -557,7 +557,7 @@ body {
 
 .hero__title {
 	font-size: 5rem;
-	margin-bottom: 10px;
+	font-family: var(--dm_serif);
 }
 
 .hero__title span {
@@ -585,8 +585,12 @@ body {
 	animation-fill-mode: backwards;
 }
 
-.animate2 {
+.animate1 {
 	animation-delay: 1300ms;
+}
+
+.animate2 {
+	animation-delay: 1700ms;
 }
 
 .animate3 {
