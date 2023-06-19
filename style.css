@@ -366,10 +366,13 @@ body {
 
 	.nav__list.notactive li {
 		font-size: 1px;
+		color: white;
 	}
 
 	.nav__list.active {
 		left: 100%;
+		color: black
+		/* display: none; */
 	}
 
 	.nav__ukFlag {
