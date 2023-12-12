@@ -622,7 +622,7 @@ body {
 .hero__img::before {
     content: "";
     position: absolute;
-	z-index: -1;
+		z-index: -1;
     inset: -10px;
     background: linear-gradient(-45deg, #FFF000 0%, #ED008C 100% );;
     transform: translate3d(0, 0, 0) scale(0.9);
@@ -1161,7 +1161,7 @@ lord-icon {
 	line-height: 3rem;
 	}
 
-	.about__img {
+	/* .about__img {
 		transition: all 300ms ease-in-out;
 	}
 
@@ -1174,7 +1174,7 @@ lord-icon {
 		4px 4px 0px black,
 		5px 5px 0px black,
 		6px 6px 0px black;
-	}
+	} */
 
 	.button__linkedin2 {
 		margin-left: 30px;
