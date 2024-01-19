@@ -28,8 +28,10 @@
               <span class="nav__logo">GDW</span>
           </div>
           <div class="nav__middle">
-            <a href="./index.html"><span class="nav__flag nav__ukFlag">🇬🇧</span></a>
-            <a href="./indice.html"><span class="nav__flag nav__esFlag">🇪🇸</span></a>
+            <a href="./index.html">
+              <img src="./img/icon/icons8-great-britain-48.png" alt="UK Flag" height="25" class="nav__flag nav__ukFlag">
+            <a href="./indice.html">
+              <img src="./img/icon/icons8-spain-48.png" alt="Spain Flag" height="25" class="nav__flag nav__esFlag">
           </div>
           <div class="nav__right">
             <ul class="nav__list notactive active">
@@ -237,105 +239,294 @@
 
      <!-- *PROJECTS -->
 
+    <!-- Ver proyecto en vivo | Ver el código fuente -->
+
     <section class="projects" id="projects-section">
-      <div class="projects__header">
-        <h1 class="projects__title">Proyectos</h1>
-      </div>
+			<div class="projects__header">
+				<h1 class="projects__title projects__title--esp">Mejores Proyectos</h1>
+			</div>
 
-      <!-- PROJECT CARDS -->
-      <div class="projects__gridCntr">
-        <!-- Card 1 -->
-        <div class="card card__bluebg">
-          <h2 class="card__header">Página de evento de WWF</h2>
-          <div class="card__image">
-            <img src="./img/project_screenshots/wwf_eventpage.png" alt="Preview Image of Project 1" id="card__image1">
-          </div>
-          <p class="card__text">
-            Esta página es una réplica de un evento real de WWF, con algunos cambios y modificaciones. Es uno de mis proyectos más intensivos en JavaScript, que incluye un carrusel de imágenes bastante complejo, un menú desplegable al hacer clic y un contador regresivo para el evento.
-          </p>
-          <ul class="card__list">
-            <li class="card__li">HTML5</li>
-            <li class="card__li">CSS</li>
-            <li class="card__li">Diseño Web Reactivo</li>
-            <li class="card__li">Javascript (ES6+)</li>
-          </ul>
-          <div class="card__buttons">
-            <a href="./external_pages/pagina_de_evento_wwf.html">
-              <button class="button button__discover">Descubrir Más <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-            <a href="https://github.com/gdwhittaker94/WWF_Event_Page/tree/main" target="_blank">
-              <button class="button button__sourceCode">Ver el código fuente <span><img src="./img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-          </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="card card__yellowbg">
-          <h2 class="card__header">Sitio web mini de WWF</h2>
+			<!-- PROJECT CARDS -->
+			<div class="projects__gridCntr">
+				<!-- *SWITCH -->
+				<div class="card card__bluebg">
           <div class="card__image">
-            <img src="./img/project_screenshots/wwf_website.png" alt="Preview Image of Project 2" id="card__image2">
-          </div>
-          <p class="card__text">
-            Este es un proyecto que intentó imitar tres de las páginas del sitio web real de WWF Australia (desde entonces han modificado el diseño original) y fue mi primer sitio web con varias páginas. Fue un proyecto muy intensivo en imágenes, que puso a prueba mis habilidades de CSS y mi capacidad para crear un diseño adaptable. También incluye algunos elementos simples de JavaScript, como un carrusel de imágenes básico y un menú hamburger.
-          </p>
-          <ul class="card__list">
-            <li class="card__li">HTML5</li>
-            <li class="card__li">CSS</li>
-            <li class="card__li">Diseño Web Reactivo</li>
-            <li class="card__li">Javascript</li>
-          </ul>
-          <div class="card__buttons">
-            <a href="./external_pages/sitio_web_mini_wwf.html">
-              <button class="button button__discover">Descubrir Más <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-            <a href="https://github.com/gdwhittaker94/WWF_Mini_Website" target="_blank">
-              <button class="button button__sourceCode">Ver el código fuente <span><img src="./img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-          </div>
-        </div>
+						<img
+							src="./img/project_screenshots/SWITCH/switch.gif"
+							alt="Preview Image of Project 1"
+							id="card__image1"
+						/>
+					</div>
+					<!-- TODO: Uncomment link when details page created -->
+          <!-- <a href="./external_pages/wwf_event_page.html" class="projects__detailsPage"> -->
+            <h2 class="card__header">SWITCH</h2>
+          <!-- </a> -->
+					<ul class="card__list">
+						<li class="card__li">CSS</li>
+						<li class="card__li">Bootstrap</li>
+						<li class="card__li">JavaScript</li>
+						<li class="card__li">Reactjs</li>
+						<li class="card__li">Python</li>
+						<li class="card__li">SQLAlchemy</li>
+						<li class="card__li">Flask</li>
+						<li class="card__li">API</li>
+					</ul>
+					<div class="card__buttons">
+            <!-- Live Version Button -->
+            <a
+							href="https://sample-service-name-ficr.onrender.com/"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Live Version 🚀
+							</button>
+						</a>
+            <!-- Source Code Button -->
+						<a
+							href="https://github.com/gdwhittaker94/4Geeks_SWITCH"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Source Code
+								<span
+									><img
+										src="./img/icon/code-slash.svg"
+										alt="Box with arrow going up and right"
+								/></span>
+							</button>
+						</a>
 
-        <!-- Card 3 -->
-        <div class="card card__bluebg">
-          <h2 class="card__header">Testimonios con Flexbox y Grid</h2>
-          <div class="card__image">
-            <img src="./img/project_screenshots/frontendmentor.png" alt="Preview Image of Project 3" id="card__image3">
-          </div>
-          <p class="card__text">
-            Decidí hacer este proyecto de frontendmentor.io para poner a prueba mis habilidades en CSS Flexbox y Grid. Fue un ejercicio útil para comprender cómo funcionan ambos sistemas de diseño, así como las diferencias entre ellos.
-          </p>
-          <ul class="card__list">
-            <li class="card__li">HTML5</li>
-            <li class="card__li">CSS</li>
-            <li class="card__li">Flexbox</li>
-            <li class="card__li">Grid</li>
-          </ul>
-          <div class="card__buttons">
-            <a href="./external_pages/testimonios_grid.html">
-              <button class="button button__discover">Descubrir Más <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-            <a href="https://github.com/gdwhittaker94/testimonials_grid" target="_blank">
-              <button class="button button__sourceCode">Ver el código fuente <span><img src="./img/icon/code-slash.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-          </div>
-        </div>
+					</div>
+				</div>
 
-        <!-- Card 4 -->
-        <div class="card card__yellowbg">
-          <h2 class="card__header">Otros Proyectos</h2>
+        <!-- *Star Wars -->
+				<div class="card card__yellowbg">
           <div class="card__image">
-            <img src="./img/project_screenshots/github_profile.png" alt="Screenshot of my Github Profile" id="card__image3">
-          </div>
-          <p class="card__text">
-            Además de los proyectos mencionados anteriormente, hay muchos otros proyectos similares o más pequeños que he realizado como parte de mi aprendizaje y desarrollo como desarrollador web frontend. Puedes ver avances y el código relevante de todos estos proyectos en mi perfil de Github, ingresando a los diferentes repositorios y consultando los documentos README y/o los archivos de código directamente.
-          </p>
-          <div class="card__buttons">
-            <a href="https://github.com/gdwhittaker94" target="_blank">
-              <button class="button button__discover">Descubrir Más <span><img src="./img/icon/box-arrow-up-right.svg" alt="Box with arrow going up and right"></span></button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+						<img
+							src="./img/project_screenshots/starwars/starwars.gif"
+							alt="Preview Image of Project 1"
+							id="card__image1"
+						/>
+					</div>
+					<!-- TODO: Uncomment link when details page created -->
+          <!-- <a href="./external_pages/wwf_event_page.html" class="projects__detailsPage"> -->
+            <h2 class="card__header">Star Wars Blog Site</h2>
+          <!-- </a> -->
+
+					<ul class="card__list">
+						<li class="card__li">CSS</li>
+						<li class="card__li">Bootstrap</li>
+						<li class="card__li">Javascript</li>
+						<li class="card__li">Reactjs</li>
+						<li class="card__li">Flux</li>
+						<li class="card__li">API</li>
+					</ul>
+					<div class="card__buttons">
+            <!-- Live Version Button -->
+            <a
+							href="https://4-geeks-stars-wars-blog.vercel.app/"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Live Version 🚀
+							</button>
+						</a>
+            <!-- Source Code Button -->
+						<a
+							href="https://github.com/gdwhittaker94/4Geeks_star_wars_blog"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Source Code
+								<span
+									><img
+										src="./img/icon/code-slash.svg"
+										alt="Box with arrow going up and right"
+								/></span>
+							</button>
+						</a>
+
+					</div>
+				</div>
+
+        <!-- *Contact List -->
+				<div class="card card__yellowbg">
+          <div class="card__image">
+						<img
+							src="./img/project_screenshots/contact_list/contact_list.gif"
+							alt="Preview Image of Project 1"
+							id="card__image1"
+						/>
+					</div>
+					<!-- TODO: Uncomment link when details page created -->
+          <!-- <a href="./external_pages/wwf_event_page.html" class="projects__detailsPage"> -->
+            <h2 class="card__header">Contact List</h2>
+          <!-- </a> -->
+
+					<ul class="card__list">
+						<li class="card__li">CSS</li>
+						<li class="card__li">Bootstrap</li>
+						<li class="card__li">JavaScript</li>
+						<li class="card__li">Reactjs</li>
+						<li class="card__li">Flux</li>
+						<li class="card__li">API</li>
+					</ul>
+					<div class="card__buttons">
+            <!-- Live Version Button -->
+            <a
+							href="https://4-geeks-contact-list-app.vercel.app/"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Live Version 🚀
+							</button>
+						</a>
+            <!-- Source Code Button -->
+						<a
+							href="https://github.com/gdwhittaker94/4Geeks_contact_list_app"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Source Code
+								<span
+									><img
+										src="./img/icon/code-slash.svg"
+										alt="Box with arrow going up and right"
+								/></span>
+							</button>
+						</a>
+
+					</div>
+				</div>
+
+        <!-- *Landing Page -->
+				<div class="card card__bluebg">
+          <div class="card__image">
+						<img
+							src="./img/project_screenshots/landing_page/landing_page.gif"
+							alt="Preview Image of Project 1"
+							id="card__image1"
+						/>
+					</div>
+					<!-- TODO: Uncomment link when details page created -->
+          <!-- <a href="./external_pages/wwf_event_page.html" class="projects__detailsPage"> -->
+            <h2 class="card__header">Personal Landing Page</h2>
+          <!-- </a> -->
+
+					<ul class="card__list">
+						<li class="card__li">HTML</li>
+						<li class="card__li">CSS</li>
+						<li class="card__li">Bootstrap</li>
+						<li class="card__li">JavaScript</li>
+						<li class="card__li">Reactjs</li>
+					</ul>
+					<div class="card__buttons">
+            <!-- Live Version Button -->
+            <a
+							href="https://react-bootstrap-landing-page-nine.vercel.app/"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Live Version 🚀
+							</button>
+						</a>
+            <!-- Source Code Button -->
+						<a
+							href="https://github.com/gdwhittaker94/personal_landing_page"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Source Code
+								<span
+									><img
+										src="./img/icon/code-slash.svg"
+										alt="Box with arrow going up and right"
+								/></span>
+							</button>
+						</a>
+
+					</div>
+				</div>
+
+				<!-- *TO-DO List -->
+				<div class="card card__bluebg">
+          <div class="card__image">
+						<img
+							src="./img/project_screenshots/todo_list/todo_list.gif"
+							alt="Preview Image of Project 1"
+							id="card__image1"
+						/>
+					</div>
+					<!-- TODO: Uncomment link when details page created -->
+          <!-- <a href="./external_pages/wwf_event_page.html" class="projects__detailsPage"> -->
+            <h2 class="card__header">TODO List</h2>
+          <!-- </a> -->
+
+					<ul class="card__list">
+						<li class="card__li">HTML</li>
+						<li class="card__li">CSS</li>
+						<li class="card__li">JavaScript</li>
+						<li class="card__li">Reactjs</li>
+						<li class="card__li">API</li>
+					</ul>
+					<div class="card__buttons">
+            <!-- Live Version Button -->
+            <a
+							href="https://4-geeks-todo-list.vercel.app/"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Live Version 🚀
+							</button>
+						</a>
+            <!-- Source Code Button -->
+						<a
+							href="https://github.com/gdwhittaker94/4Geeks_todo_list"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Source Code
+								<span
+									><img
+										src="./img/icon/code-slash.svg"
+										alt="Box with arrow going up and right"
+								/></span>
+							</button>
+						</a>
+					</div>
+				</div>
+
+				<!-- *GITHUB -->
+				<div class="card card__bluebg">
+          <div class="card__image">
+						<img
+							src="./img/project_screenshots/github.gif"
+							alt="Preview Image of Project 1"
+							id="card__image1"
+						/>
+					</div>
+					<!-- TODO: Uncomment link when details page created -->
+          <a href="https://github.com/gdwhittaker94" class="projects__detailsPage">
+            <h2 class="card__header">My Github</h2>
+          </a>
+					<ul class="card__list">
+						<li class="card__li card__li--github">Check out all my 50+ repos!</li>
+					</ul>
+					<div class="card__buttons">
+            <!-- Live Version Button -->
+            <a
+							href="https://github.com/gdwhittaker94/"
+							target="_blank"
+						>
+							<button class="button button__projects button__sourceCode">
+								Go there 🚀
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
     <!-- *ABOUT ME -->
 

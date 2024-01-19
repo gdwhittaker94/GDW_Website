@@ -261,12 +261,11 @@ body {
 
 .nav__flag {
 	margin-left: 10px;
-	font-size: 2rem;
 	cursor: pointer;
 }
 
 .nav__ukFlag {
-	margin-left: 20px;
+	margin-left: 50px;
 }
 
 .nav__right {
@@ -373,10 +372,6 @@ body {
 		left: 100%;
 		color: black
 		/* display: none; */
-	}
-
-	.nav__ukFlag {
-		margin-left: -10px;
 	}
 }
 
@@ -714,6 +709,7 @@ body {
 	max-height: 50px;
 }
 
+
 /* *BUTTONS */
 
 .hero__buttons {
@@ -778,11 +774,15 @@ span {
 	position: relative;
 }
 
+.projects__title--esp {
+	text-align: center;
+}
+
 .projects__title::before, .projects__title::after {
 	content: ' ';
 	border: 2px solid var(--turquoise);
 	height: 1px;
-	width: 180px;
+	width: 250px;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -798,8 +798,18 @@ span {
 
 .projects__gridCntr {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	gap: 30px;
+}
+
+.projects__detailsPage {
+  color: black;
+}
+
+.projects__detailsPage:hover {
+  text-decoration: underline;
+  color: rgb(81, 81, 81);
+  text-decoration-thickness: 2px;
 }
 
 /* *CARD */
@@ -807,10 +817,8 @@ span {
 .card {
 	border-radius: 10px;
 	font-family: var(--dm_sans);
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
 	align-items: center;
 	position: relative;
 	z-index: 1;
@@ -854,23 +862,25 @@ span {
 /* Prevents issues when the parent creates a stacking context e.g. using the transform property)*/
 
 .card > * {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 }
 
 .card__header {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-family: var(--dm_serif);
+  text-align: center;
 }
 
 .card__image {
-	flex-grow: 1;
+  margin-top: 15px;
 }
 
 .card__image img {
 	border: 1px solid rgba(0, 0, 0, 0.6);
 	border-radius: 5px;
-	max-width: 80%;
-	margin: 0 auto;
+	max-width: 85%;
+	box-shadow: 0px 3px 4px 0px black;
+  margin-inline: auto;
 }
 
 .card__text, .card__text a {
@@ -886,27 +896,36 @@ span {
 .card__list,
 .card__buttons {
 	display: flex;
-	width: 80%;
+	width: 88%;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 20px;
+  margin-bottom: 15px;
+}
+
+.card__buttons {
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
 .card__li {
-	border-radius: 3px;
-	padding: 10px;
+  padding-inline: 5px;
 	font-size: 1.2rem;
 	font-weight: 700;
-	background: white;
 	position: relative;
 	text-align: center;
-
-	border: 2px solid var(--turquoise);
 	color: rgba(0, 0, 0, 0.7);
+  border-right: 2px solid var(--turquoise);
+  margin-bottom: 5px;
 }
 
-.button__discover {
-	color: black;
+.card__li--github {
+	border-right: none;
+}
+
+.button__projects {
+	font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
 	background: rgb(238, 228, 28);
 	background: linear-gradient(
 		120deg,
@@ -918,15 +937,11 @@ span {
 }
 
 .button__sourceCode {
-	color: black;
-	background: rgb(238, 228, 28);
 	background: linear-gradient(
 		320deg,
 		rgba(238, 228, 28, 0.4158431092271293) 35%,
 		rgba(47, 178, 165, 0.5) 100%
 	);
-	box-shadow: 2px 2px 3px 0px rgba(151, 151, 151, 0.54),
-		2px 2px 14px 0px rgb(214 213 213 / 54%);
 }
 
 /* *ABOUT ME */
@@ -1073,6 +1088,12 @@ lord-icon {
 	margin-bottom: 5px;
 }
 
+@media screen and (min-width:402px) {
+	.projects__title--esp::before, .projects__title--esp::after {
+		width: 350px;
+	}
+}
+
 /* * LARGER SCREENS MEDIA QUERIES */
 
 @media screen and (min-width:768px) {
@@ -1125,6 +1146,14 @@ lord-icon {
 	.projects__title::after, .projects__title::before {
 		width: 300px;
 	}
+
+	.projects__title--esp::before, .projects__title--esp::after {
+		width: 450px;
+	}
+
+  .projects__gridCntr {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 
 	.card {
 		transition: transform 300ms ease-in-out
