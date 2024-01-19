@@ -202,6 +202,45 @@ strong {
 	color: rgb(27, 148, 188);
 }
 
+.callout {
+	display: flex;
+	background: rgb(211, 245, 241);
+	border: 2px solid #66b1ea;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.callout p {
+	margin-bottom: 0px;
+}
+
+.callout__emoji {
+	font-size: 2rem;
+	margin-right: 5px;
+}
+
+.giphy-embed {
+	margin-inline: auto;
+	text-align: center;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	width: 60%;
+}
+
+.giphy-embed img {
+	display: inline-block;
+	border-radius: 10px;
+	border: 2px solid black;
+}
+
+.giphy-embed p {
+	font-size: 1.4rem;
+	font-family: var(--dm_sans);
+	color: grey;
+	margin-top: 5px;
+}
+
 /* Subtitle */
 
 .subtitle {
@@ -266,26 +305,42 @@ strong {
 	width: 220px;
 }
 
+.subtitle--parts {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitle__underline--part1 {
+	width: 230px;
+}
+
+.subtitle__underline--part2 {
+	width: 330px;
+}
+
+.subtitle__underline--part3 {
+	width: 210px;
+}
 
 /* List */
 
 .list {
 	margin-bottom: 20px;
-	padding-left: 2%;
 }
 
 .list__item {
-	list-style: disc;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    font-family: var(--dm_sans);
-    font-weight: 500;
+	list-style: none;
+	margin-bottom: 20px;
+	font-family: var(--dm_sans);
+	font-weight: 500;
 	font-size: 1.6rem;
+
 }
 
 .list__link {
 	font-size: 1.6rem;
 	color: rgb(27, 148, 188);
+	background-color: #fffbbe;
 }
 
 /* Tech List */
@@ -433,7 +488,7 @@ strong {
 
 
 
-/* *KEYFRAMES + MEDIA QUERIES */
+/* *KEYFRAMES */
 
 @keyframes shake-horizontal {
 	0%,
@@ -459,11 +514,17 @@ strong {
 	}
 }
 
+/* * MEDIA QUERIES */
+
 @media screen and (max-width:450px) {
 
-    .main-title__underline {
-        width: 70vw;
-    }
+	.paragraph, .paragraph a, .list__link, .paragraph i {
+		font-size: 1.3rem;
+	}
+
+	.main-title__underline {
+			width: 70vw;
+	}
 
 	.subtitle {
 		text-align: center;
@@ -473,6 +534,10 @@ strong {
 		width: 90%;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.subtitle__underline--parts {
+		width: 90%;
 	}
 
 	.subtitle__underline--summary {
@@ -489,13 +554,17 @@ strong {
 		margin-top: 40px;
 	}
 
+	.giphy-embed {
+		width: 80%;
+	}
+
 }
 
 @media screen and (max-width:650px) {
 
 	.main-title__underline--ES, .main-title__underline--ES2 {
         width: 70vw;
-    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -503,4 +572,5 @@ strong {
 	.main-title__underline--ES3 {
         width: 70vw;
     }
+	}
 }
